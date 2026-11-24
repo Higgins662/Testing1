@@ -32,6 +32,44 @@ Use the Fuzz in Shot 1 (peeking out of a pocket to deliver the hook) and the fin
 ### Audio
 
 - **VO voice:** dry, slightly mischievous, conspiratorial ("let me tell you a secret"). Not hyper/YouTuber.
+
+### Voice rotation
+
+Each episode uses one voice from a pool of six, randomly assigned (no voice repeats on back-to-back episodes). Voices are from **Kokoro** (open-source TTS, Apache-2.0, OK for commercial use).
+
+| Voice | Kokoro ID | Accent / feel |
+|---|---|---|
+| Michael | `am_michael` | American male, warm, even |
+| Puck | `am_puck` | American male, playful |
+| George | `bm_george` | British male, dry storyteller |
+| Lewis | `bm_lewis` | British male, deeper |
+| Heart | `af_heart` | American female, bright |
+| Emma | `bf_emma` | British female, crisp |
+
+**Assignments (Vol. 1):**
+
+| Ep | Title | Voice |
+|---|---|---|
+| 01 | The Magpie Myth | Heart |
+| 02 | Paid in Trinkets | **Emma** (hand-picked) |
+| 03 | Blue or Bust | Michael |
+| 04 | The Pee Museum | Puck |
+| 05 | Accidental Forests | Heart |
+| 06 | Otter Pockets | Lewis |
+| 07 | The Detachable Pocket | George |
+| 08 | Crab Conga | Emma |
+| 09 | 503 Samples | George |
+| 10 | Dust Isn't You | Puck |
+| 11 | The Goblin Metal | Michael |
+| 12 | Mudlarks | Lewis |
+
+Swap any assignment freely if a voice fits a topic better, as with Emma on ep02.
+
+**VO production notes:**
+- Generate each caption line as its own clip and place it at that line's start time; time the captions to the speech, not the other way around.
+- For list beats ("Beads. Buttons. An earring."), generate each item separately and drop it in exactly when that item appears on screen.
+- Write shouted words in lowercase for the TTS ("the friend half"). All-caps can get spelled out. Keep the caps in the on-screen captions only.
+- Mix: voice on top, music ducked ~8 dB under speech, sound effects ducked ~4 dB.
 - **Music bed:** quiet plucky pizzicato or lo-fi music-box loop, -20 dB under VO.
 - **Signature sting:** a soft "pocket zip" or rustle sound on the hook, and a tiny "pop" on the payoff. Reuse it every episode.
 
@@ -428,7 +466,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 
 - [ ] Generate Shot 1 of every episode first and lock the Fuzz design before batching the rest
 - [ ] Use a fixed seed or a character reference image for the Fuzz across all episodes
-- [ ] Record all 12 VOs in one session for consistent tone
+- [ ] Generate each episode's VO with its assigned voice (see Voice rotation)
 - [ ] Time captions to VO, not the other way around
 - [ ] Add the "pocketfuzzy" lower-third tag on the last 2 seconds
 - [ ] Add the bottom-left "pocketfuzzy" watermark overlay (whole video, 70% opacity)
