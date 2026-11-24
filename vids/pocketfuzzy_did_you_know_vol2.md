@@ -709,10 +709,10 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 ## 35 — Why @
 
 **Length:** ~21s · **Voice:** Emma · **Trend:** Microsoft outage "adult snow day" (Nov 12–13)
-**Hook:** The @ in your email address was chosen because nobody's name uses it.
+**Hook:** The @ in email was picked because no name uses it.
 
 ### Voiceover script
-> The @ in your email address was chosen because nobody's name uses it.
+> The @ in email was picked because no name uses it.
 > In 1971, an engineer sending the first network emails needed a symbol to separate a person's name from their computer's name.
 > He scanned his keyboard for something that would never show up in a name. The little "at" sign was perfect: you, at, this machine.
 > Fifty-five years later, we all live at it.

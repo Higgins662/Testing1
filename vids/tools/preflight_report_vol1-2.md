@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|
 | 01 | The Magpie Myth | 94 | STRONG | SPECIFIC | 30s/24s | 0 |
 | 02 | Paid in Trinkets | 80 | STRONG | SPECIFIC | 26s/25s | 0 |
-| 03 | Blue or Bust | 74 | OK | SPECIFIC | 25s/23s | 0 |
+| 03 | Blue or Bust | 80 | STRONG | SPECIFIC | 24s/23s | 0 |
 | 04 | The Pee Museum | 84 | STRONG | SURPRISE | 29s/25s | 0 |
 | 05 | Accidental Forests | 80 | STRONG | SURPRISE | 24s/23s | 0 |
 | 06 | Otter Pockets | 84 | STRONG | SURPRISE | 22s/22s | 0 |
@@ -36,15 +36,14 @@
 | 32 | The Mustache Joke | 80 | STRONG | SPECIFIC | 24s/21s | 0 |
 | 33 | Butterflies Come Home | 88 | STRONG | FITS SHOT 1 | 27s/23s | 0 |
 | 34 | The Space Prank | 80 | STRONG | SPECIFIC | 28s/23s | 0 |
-| 35 | Why @ | 74 | OK | SPECIFIC | 26s/21s | 0 |
+| 35 | Why @ | 80 | STRONG | SPECIFIC | 26s/21s | 0 |
 | 36 | Runaway Balloons | 84 | STRONG | OPEN LOOP | 30s/23s | 0 |
 | 37 | The $1.50 Hot Dog | 90 | STRONG | OPEN LOOP | 25s/22s | 0 |
 VO runs +3s vs the labeled length on median (at 150 wpm)
 
-Median hook score 84 · STRONG 27 · OK 10 · WEAK 0
+Median hook score 84 · STRONG 29 · OK 8 · WEAK 0
 
 ## Fix list
-- **03 Blue or Bust**: hook 74 OK: 13 words ≈ 5.2s; shot 1 is ~4s, cut words; no number or name: a count, date or place would sharpen it
 - **08 Crab Conga**: hook 74 OK: no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks
 - **11 The Goblin Metal**: hook 72 OK: slow opener: put the subject first; no number or name: a count, date or place would sharpen it
 - **20 Bathroom-Tile Rocket**: hook 70 OK: no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks
@@ -53,4 +52,3 @@ Median hook score 84 · STRONG 27 · OK 10 · WEAK 0
 - **25 Dr. Bug**: hook 74 OK: no number or name: a count, date or place would sharpen it
 - **27 Cloud Nap**: hook 74 OK: no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks
 - **31 Hey Guys**: hook 74 OK: no number or name: a count, date or place would sharpen it
-- **35 Why @**: hook 74 OK: 13 words ≈ 5.2s; shot 1 is ~4s, cut words; no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks

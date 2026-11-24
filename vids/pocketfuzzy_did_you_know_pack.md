@@ -137,7 +137,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 |---|---|---|---|
 | 01 | The Magpie Myth | Magpies don't steal your jewelry. They're scared of it. | Myth-buster |
 | 02 | Paid in Trinkets | A little girl fed crows… and they started paying her back. | Wholesome |
-| 03 | Blue or Bust | This bird will reject your gift if it's the wrong shade of blue. | Weird |
+| 03 | Blue or Bust | This bird rejects your gift if it's the wrong blue. | Weird |
 | 04 | The Pee Museum | This rat's junk pile is 50,000 years old… and it's held together with pee. | Gross ★ |
 | 05 | Accidental Forests | Squirrels lose up to 3 out of 4 acorns they bury. | Myth-ish |
 | 06 | Otter Pockets | Sea otters have pockets. And they keep their favorite rock in them. | On-brand ★ |
@@ -209,10 +209,10 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 ## 03 — Blue or Bust
 
 **Length:** ~23s
-**Hook:** This bird will reject your gift if it's the wrong shade of blue.
+**Hook:** This bird rejects your gift if it's the wrong blue.
 
 ### Voiceover script
-> This bird will reject your gift if it's the wrong shade of blue.
+> This bird rejects your gift if it's the wrong blue.
 > Male satin bowerbirds build a little stick archway to impress a mate, then decorate it.
 > And they want blue. Feathers, berries, bottle caps, straws, clothespins: if it's blue, it's going in.
 > Grown-up males collect bright blue. Young males settle for yellow.
