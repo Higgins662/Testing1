@@ -174,6 +174,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:24 | The Fuzz holding a tiny shiny ring, looking guilty, slowly sliding it into its pocket. | THE THIEF WAS US | pop |
 
 **Caption:** Magpies have been framed for centuries 🪶 #didyouknow #magpie #animalfacts #mythbusting #birds
+**Pinned comment:** Be honest: did you grow up thinking magpies steal shiny things? 🪙 Who told you?
 **Source:** Shephard, Lea & Hempel de Ibarra, "'The thieving magpie'? No evidence for attraction to shiny objects," *Animal Cognition* (2014/2015), University of Exeter.
 **Accuracy guardrails:** Say "a study found" or "scientists found." Don't claim every magpie on Earth avoids shiny things. The study tested birds in the UK.
 
@@ -201,6 +202,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:25 | A crow perched on a wire, proudly wearing a matching heart-half pendant that says "FRIEND," with the Fuzz giving a thumbs-up from a pocket below. | THE CROW HAS THE OTHER HALF | pop |
 
 **Caption:** Be nice to crows. They tip. 🐦‍⬛ #didyouknow #crows #animalfacts #wholesome #corvids
+**Pinned comment:** Imagine a crow leaving you gifts 🥹 What do you think yours would bring?
 **Source:** BBC / KNKX / Cascade PBS reporting by Katy Sewall (2015) on Gabi Mann of Seattle; corvid researcher John Marzluff quoted.
 **Accuracy guardrails:** The "FRIEND" half is a joke Gabi herself made, so frame it as a joke, not a fact. Don't use a realistic likeness of the real child.
 
@@ -228,6 +230,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:19–0:23 | A female bowerbird inspecting the blue bower approvingly; the Fuzz in the corner holds up a blue bottle cap hopefully. | BLUE GETS YOU A DATE | pop |
 
 **Caption:** Satin bowerbirds: the pickiest interior designers in nature 💙 #didyouknow #bowerbird #birds #animalfacts #australia
+**Pinned comment:** If a bowerbird decorated your room, what's the first blue thing it would steal? 💙
 **Source:** BirdLife Australia (Satin Bowerbird); Field Museum; AMNH "Fast Facts: Bowerbirds"; The Nature Conservancy blog.
 **Accuracy guardrails:** This is specifically the *satin* bowerbird. Other bowerbird species prefer other colors.
 
@@ -255,6 +258,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:21–0:25 | The packrat standing behind a velvet rope in a tiny museum, its midden in a glass case with a placard; it adjusts a little bow tie. | HOARD LONG ENOUGH… | pop |
 
 **Caption:** Scientists literally read the past in packrat pee 🐀 #didyouknow #packrat #science #gross #history
+**Pinned comment:** Packrats: hoarders, historians, absolutely feral 🐀 What's the oldest thing in YOUR junk drawer?
 **Source:** U.S. National Park Service, "Studying the Past and Predicting the Future Using Rat Nests"; Smithsonian Magazine (amberat specimens up to ~50,000 years); *Packrat Middens: The Last 40,000 Years of Biotic Change* (Univ. of Arizona Press).
 **Accuracy guardrails:** Say "up to" or "could be" 50,000 years. That's the oldest end, near the limit of carbon dating, not every midden.
 
@@ -282,6 +286,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:23 | The same squirrel, now old with tiny spectacles, sitting on a branch of the giant oak; the Fuzz pats its shoulder. | FORGETFULNESS, BUT MAKE IT FORESTRY | pop |
 
 **Caption:** Every oak might be a squirrel's lost snack 🐿️🌳 #didyouknow #squirrels #nature #trees #animalfacts
+**Pinned comment:** Raise your hand if you've also lost track of a snack you hid for later 🐿️ Name the snack.
 **Source:** Steele & Smallwood (Wilkes University / University of Richmond) acorn caching research; Britannica, "Is it true that squirrels forget where they bury about half of their food?"
 **Accuracy guardrails:** Use "up to," because recovery rates vary a lot by study. One urban study found gray squirrels recovered ~85%. Don't say squirrels "forget" as a certainty; "lose track of" or "never dig up" is safer.
 
@@ -309,6 +314,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:19–0:22 | The otter hugs its rock lovingly; the Fuzz pulls a small pebble out of its own pocket and hugs it too. | POCKET ROCK | pop |
 
 **Caption:** Sea otters: everyone needs a pocket rock 🦦 #didyouknow #seaotter #otters #animalfacts #cute
+**Pinned comment:** If you had one otter pocket, what's going in it? 🦦 Wrong answers only.
 **Source:** NOAA Ocean Today, "Sea Otter Anatomy"; Encyclopedia of Life (EOL) sea otter account.
 **Accuracy guardrails:** The pouches are loose skin folds under the forearms. Don't call them pockets "in their fur" or "in their belly."
 **Note:** Strong candidate for a pinned intro post, since it ties the account name to the series.
@@ -337,6 +343,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:24 | The Fuzz climbs out of the bottom of the tie-on pocket last, waving. | ONE POCKET. ZERO LIMITS. | pop |
 
 **Caption:** Tie-on pockets were the original "everything bag" 👜 #didyouknow #history #fashionhistory #pockets #18thcentury
+**Pinned comment:** 1700s pockets fit a whole sewing kit. Modern jeans fit half a phone 👖 Which clothes have the worst pockets?
 **Source:** Victoria and Albert Museum, "Women's tie-on pockets" and collection records; Burman & Fennetaux, *The Pocket: A Hidden History of Women's Lives, 1660–1900*.
 **Accuracy guardrails:** Tie-on pockets were common roughly 1650s–late 1800s, especially in Britain. Keep it "in the 1700s" or "for about 200 years." Don't claim they were universal worldwide.
 
@@ -364,6 +371,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:24 | The tiniest crab at the end, holding a cracked shell with a hole in it, looking at the camera; the Fuzz hands it a thimble. | …EXCEPT THE LITTLE GUY | sad note, then pop |
 
 **Caption:** Hermit crabs run the most organized housing market on Earth 🦀 #didyouknow #hermitcrab #ocean #animalfacts #nature
+**Pinned comment:** Which crab in the line are you? 🦀 Biggest, middle, or the little guy at the end?
 **Source:** Scientific American (Lewis & Rotjan research on synchronous vacancy chains); Discover Magazine; Tufts Journal.
 **Accuracy guardrails:** Not every crab ends up better off. The last one sometimes gets a damaged shell, which is the joke. It's a real but not universal behavior ("some hermit crabs," "can form").
 
@@ -391,6 +399,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:24 | Tiny belly hairs drawn as little sheepdogs herding fluffy fibers into the belly button; the Fuzz waves goodbye as it gets herded in. | YOUR BELLY HAIR IS HERDING YOUR SHIRT | pop |
 
 **Caption:** Science solved belly button lint: the question nobody asked (but everyone wondered) 🔬 #didyouknow #science #gross #weirdscience #bellybutton
+**Pinned comment:** Quick poll: do you get belly button lint? 🔬 This is a judgment-free zone.
 **Source:** Steinhauser, "The nature of navel fluff," *Medical Hypotheses* (2009); coverage in TIME and Fox News.
 **Accuracy guardrails:** "503 samples" and "three years" both come from coverage of the study. Lint is mostly clothing fibers, plus some dust and skin cells.
 
@@ -418,6 +427,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:19–0:22 | The dust bunny opens the front door and waves at the outdoors like it's family. | IT'S LITERALLY THE OUTDOORS | pop |
 
 **Caption:** Stop blaming yourself for the dust in your home 🧹 #didyouknow #mythbusting #science #cleaning #home
+**Pinned comment:** So we're mostly dusting… the outdoors 🧹 Who's showing this to their roommate?
 **Source:** Layton & Beamer, "Migration of Contaminated Soil and Airborne Particulates to Indoor Dust," *Environmental Science & Technology* (2009); ScienceDaily / Phys.org coverage.
 **Accuracy guardrails:** The 60% figure comes from a modeling study of Midwestern U.S. homes. Mix varies by house, climate, pets and so on. Keep it "studies estimate" or "one study found," not a universal law.
 
@@ -445,6 +455,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:20–0:24 | The goblin and demon sitting on a periodic table, swinging their legs; the Fuzz nervously backs away. | MINING WAS HAUNTED | pop |
 
 **Caption:** Chemistry is secretly folklore 👺⛏️ #didyouknow #chemistry #history #folklore #goblin
+**Pinned comment:** Cobalt is a goblin. Nickel is a demon 👹 Which element deserves a scarier name?
 **Source:** Royal Society of Chemistry, "Chemistry in its element: cobalt"; Science Friday, "The Origin of the Word 'Cobalt'"; Mental Floss, element names from folklore.
 **Accuracy guardrails:** Cobalt ores often contained arsenic, which caused the fumes. You can say "the arsenic in the ore" if you want the real chemistry. Nickel's namesake is described as a mischievous demon or "Old Nick," so keep it "demon," not a specific deity.
 
@@ -472,6 +483,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 5 | 0:21–0:25 | The Fuzz polishing a tiny Roman tile with its fuzz and holding it up proudly. | ONE PERSON'S TRASH… | pop |
 
 **Caption:** Low tide in London is a time machine 🏺 #didyouknow #history #london #mudlarking #treasure
+**Pinned comment:** People still find Roman tiles in the Thames mud 🏺 What's the coolest thing you've ever found by accident?
 **Source:** Royal Museums Greenwich, "Mudlarks: The murky world of London's river scavengers"; Thames Festival Trust; NPR on mudlarking (2019); London Museum Docklands "Secrets of the Thames" exhibition.
 **Accuracy guardrails:** Today mudlarking on the Thames foreshore requires a permit from the Port of London Authority. If you mention it, don't imply anyone can dig freely. Mudlarks were also sometimes the elderly, not only kids.
 
@@ -485,4 +497,5 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 - [ ] Time captions to VO, not the other way around
 - [ ] Add the "pocketfuzzy" lower-third tag on the last 2 seconds
 - [ ] Add the bottom-left "pocketfuzzy" watermark overlay (whole video, 70% opacity)
+- [ ] Right after posting, add the episode's **Pinned comment** and pin it
 - [ ] Post order suggestion: 06 (intro) → 04 → 09 → 01 → 02 → 08 → 11 → 05 → 10 → 03 → 07 → 12

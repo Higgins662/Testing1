@@ -118,6 +118,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** real store names, logos or shopping-bag branding; real football team colors or logos.
 **Caption:** Black Friday started as a cop's complaint 🚓 #didyouknow #blackfriday #history #etymology
+**Pinned comment:** Black Friday was born as a complaint 🚓 Are you shopping this year or staying far, far away?
 **Source:** Philadelphia police usage documented by linguist Ben Zimmer and the *American Dialect Society*; Merriam-Webster word history.
 **Accuracy guardrails:** The game was the Army–Navy game, often played in Philadelphia that weekend. Say "a big football game" to keep it simple. Don't claim one specific officer coined it.
 
@@ -145,6 +146,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** branded turkeys or packaging, parade imagery.
 **Caption:** Wild turkeys are low-key athletes 🦃 #didyouknow #thanksgiving #turkey #animalfacts
+**Pinned comment:** Wild turkeys sleep in trees. Farm turkeys sleep on the couch 🦃 Which one are you after dinner?
 **Source:** National Wild Turkey Federation; U.S. Fish & Wildlife Service wild turkey profile.
 **Accuracy guardrails:** Speed claims vary by source (roughly 40–55 mph in short bursts), so keep "up to around fifty." Say "most" farm turkeys can't fly; heritage breeds can.
 
@@ -173,6 +175,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** a pin, emblem, arrows, flaming outfits or anything from the film series; no fictional "mockingjay" design.
 **Caption:** Mockingbirds: nature's original sound mimic 🐦 #didyouknow #birds #mockingbird #animalfacts
+**Pinned comment:** Mockingbirds can copy car alarms 🐦 What's the weirdest sound you've ever heard a bird make?
 **Source:** Cornell Lab of Ornithology, *All About Birds* (Northern Mockingbird).
 **Accuracy guardrails:** "Around 200" is the commonly cited upper range for an individual male. Night singing is mostly unmated males in spring. Saying "famous movie bird" in VO is fine; don't name it in prompts.
 
@@ -200,6 +203,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** any game art style, characters, logos, neon "vice" aesthetic, palm-tree-and-sunset title look.
 **Caption:** Florida really said "why not both" 🐊 #didyouknow #florida #alligator #crocodile #animalfacts
+**Pinned comment:** Gator or croc? 🐊 Drop your best trick for telling them apart (besides running).
 **Source:** National Park Service, Everglades National Park ("Alligators and Crocodiles"); Florida Fish and Wildlife Conservation Commission.
 **Accuracy guardrails:** "In the wild" matters, because zoos elsewhere have both. Gators can tolerate some brackish water; keep it "gators like fresh, crocs can handle salt."
 
@@ -228,6 +232,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** any actor, the gun-barrel shot, "007" or logo, guns, martini glasses, Aston Martins, film poster poses. The tuxedo silhouette stays generic and unarmed.
 **Caption:** The real James Bond had binoculars and bird books, not gadgets 🐦 #didyouknow #history #birds #books
+**Pinned comment:** The real James Bond's gadget of choice: binoculars 🐦 What's the most boring name you'd give a secret agent?
 **Source:** Ian Fleming's own account (interviews); Academy of Natural Sciences of Drexel University (James Bond, ornithologist).
 **Accuracy guardrails:** Fleming wrote at his Jamaica home, Goldeneye. Don't mention or imply the new casting visually; the VO can skip the actor entirely.
 
@@ -256,6 +261,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** Microsoft or any software logos, real app interfaces, recognizable historical people.
 **Caption:** Computer debugging used to be literal 🦋💻 #didyouknow #tech #history #computers
+**Pinned comment:** The first computer bug was a moth 🦋 What's the dumbest thing that ever broke your tech?
 **Source:** Smithsonian National Museum of American History (Harvard Mark II logbook, 1947); U.S. Naval History and Heritage Command.
 **Accuracy guardrails:** "Bug" as slang for a glitch existed before 1947. This is the first *actual* bug, which is the joke in the note. Don't say Grace Hopper found it; she popularized the story.
 
@@ -284,6 +290,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** SpaceX logos or lettering, the exact real vehicle (keep proportions cartoonish), any real person.
 **Caption:** Space engineering, but make it home renovation 🚀 #didyouknow #space #rockets #engineering
+**Pinned comment:** A rocket in bathroom tiles, caught by giant chopsticks 🥢🚀 Which part sounds more made up?
 **Source:** SpaceX Starship flight updates; NASA "Thermal Protection Systems" explainers; AP coverage of the Nov 14, 2026 catch.
 **Accuracy guardrails:** Tile counts vary by ship version (often reported around 18,000), so say "thousands." Re-entry plasma is hotter than lava; avoid exact degrees.
 
@@ -312,6 +319,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** real teams, liveries, sponsor decals, real drivers, recognizable circuits.
 **Caption:** Physics says yes. Common sense says no 🏎️ #didyouknow #racing #physics #cars
+**Pinned comment:** Ceiling driving is possible in theory 🏎️ Would you ride shotgun?
 **Source:** Formula 1 technical explainers on downforce; Royal Academy of Engineering educational material.
 **Accuracy guardrails:** Keep "in theory." No car has done it in a sustained, real-world ceiling run. Don't name the champion in on-screen text; the VO can skip him too.
 
@@ -340,6 +348,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** any award show, blimp, network logo or the celebrity who was slimed; the real rail operator's logos or exact map design.
 **Caption:** Slime mold > train engineers?? 🟡🚆 #didyouknow #science #slimemold #trains
+**Pinned comment:** A brainless slime matched decades of rail planning in about a day 🟡 Which city's transit should we hand to the slime next?
 **Source:** Tero et al., "Rules for Biologically Inspired Adaptive Network Design," *Science* (2010).
 **Accuracy guardrails:** The species is *Physarum polycephalum*. It's not a fungus, so don't call it one. Say "remarkably like," not "identical to." "About a day" matches the reported ~26 hours.
 
@@ -368,6 +377,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** vapes, cigarettes, selfies with quokkas, people touching or feeding quokkas, the viral photo.
 **Caption:** Quokkas: the world's happiest-looking animal deserves some space 🦘 #didyouknow #quokka #australia #animalfacts
+**Pinned comment:** Quokkas aren't really smiling. It's just their face shape 🦘 Have you ever seen one in person?
 **Source:** Rottnest Island Authority (history and quokka guidelines); Western Australian Museum.
 **Accuracy guardrails:** The captain was Willem de Vlamingh. It's illegal to touch or feed quokkas on Rottnest, so keep the PSA. Quokkas aren't actually smiling; the look comes from their face shape.
 
@@ -396,6 +406,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** the AI meme image or its pose (propped up on front paws at night), creepy styling, anything copying the meme video.
 **Caption:** Polar bears aren't even white. Remember November 2026? 🐻‍❄️ #didyouknow #polarbear #science #november2026
+**Pinned comment:** Black skin, see-through fur 🐻‍❄️ What other animal do you think is secretly lying about its color?
 **Source:** Polar Bears International ("Polar Bear Fur and Skin"); U.S. Fish & Wildlife Service.
 **Accuracy guardrails:** "Clear and hollow" is the standard explanation. Debunk the old myth that the hairs act like fiber-optic cables carrying light to the skin; don't say they "pipe light."
 
@@ -424,6 +435,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** any Pokémon creature (including "inspired by" designs), Poké Balls, the logo, trainer outfits, real console branding, or a likeness of Tajiri.
 **Caption:** Every collector starts somewhere. His start was bugs 🪲 #didyouknow #gaming #history #bugs
+**Pinned comment:** Every collector starts somewhere 🪲 What did you obsessively collect as a kid?
 **Source:** Tajiri interviews (TIME, 1999); Nintendo/Game Freak histories.
 **Accuracy guardrails:** He grew up in Machida, on the outskirts of Tokyo. Pokémon launched in Japan in February 1996; "thirty years ago" holds for 2026. Keep the sketched creatures generic bugs, not monster designs.
 
@@ -452,6 +464,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** any characters, demons, tigers, magpies, outfits or patterns from the animated film; no idol-group stage looks. Draw dokkaebi from traditional folklore with our own design.
 **Caption:** Korea's goblins are chaotic, not evil 👹🧹 #didyouknow #folklore #korea #goblin
+**Pinned comment:** Be nice to your old broom 🧹 What in your house is most likely to turn into a goblin?
 **Source:** National Folk Museum of Korea (Encyclopedia of Korean Folk Culture, "Dokkaebi").
 **Accuracy guardrails:** Folklore varies by region and story, so say "in many old tales." The magic club is the *dokkaebi bangmangi*. Avoid the common mix-up with Japanese oni; dokkaebi are typically mischievous, not demonic.
 
@@ -479,6 +492,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** real airline liveries, airport branding or terminal signage.
 **Caption:** Fog is a cloud with no motivation ☁️✈️ #didyouknow #weather #science #fog
+**Pinned comment:** Fog is a cloud taking a nap ☁️ Ever been stuck at an airport because one lay down on the runway?
 **Source:** UK Met Office ("What is fog?"); NOAA National Weather Service.
 **Accuracy guardrails:** Many airliners can land in very low visibility, but airports reduce traffic in fog for spacing and safety. Keep "everyone waits" general.
 
@@ -507,6 +521,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** famous historical figures (e.g., Cleopatra or Nefertiti likenesses), real makeup brands or packaging.
 **Caption:** Ancient makeup was multitasking 👁️ #didyouknow #history #ancientegypt #makeup
+**Pinned comment:** Glam and maybe germ defense 👁️ (Please don't try lead eyeliner.) Which beauty trend will future historians find weirdest?
 **Source:** Tapsoba et al., *Analytical Chemistry* (2010), Louvre/CNRS study of Egyptian cosmetics.
 **Accuracy guardrails:** Say "might have" and "may have." It's a lab finding about cells, not proof of a medical effect. **Do not imply lead makeup is safe today.** Add a quick end-card line if posting: "Don't try lead eyeliner. Seriously."
 
@@ -534,6 +549,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** real airlines' liveries, logos, uniforms, cabin designs or the viral bed seat.
 **Caption:** Your taste buds don't like flying either ✈️👅 #didyouknow #science #travel #food
+**Pinned comment:** Airplane tomato juice hits different 🍅✈️ What do you only ever order on a plane?
 **Source:** Fraunhofer Institute for Building Physics study for Lufthansa (2010); BBC Future reporting on taste at altitude.
 **Accuracy guardrails:** "Roughly thirty percent" is the study's figure, so keep "roughly." The tomato-juice effect is linked to umami holding up better at altitude; don't overclaim.
 
@@ -561,6 +577,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** characters from horror films or famous Halloween properties.
 **Caption:** Halloween's first lanterns were turnips. Be glad we switched 🎃 #didyouknow #halloween #history #folklore
+**Pinned comment:** The first jack-o'-lanterns were turnips 🎃 Would you dare carve one next Halloween?
 **Source:** National Museum of Ireland (Country Life collection); English Heritage on Samhain traditions.
 **Accuracy guardrails:** Turnips, swedes and mangelwurzels were all used, so "turnips and other root vegetables" covers it. Shelf life: post now as a "Halloween's over, but…" or save for October 2027.
 
@@ -589,6 +606,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** the white smiling Guy Fawkes mask (that design comes from *V for Vendetta* and is trademarked); real-person portraits.
 **Caption:** Bonfire Night is why you say "guys." You've been quoting 1605 this whole time 🔥 #didyouknow #etymology #history #bonfirenight
+**Pinned comment:** Hey guys 👋 Which everyday word do you think has the most dramatic origin?
 **Source:** Oxford English Dictionary ("guy," word history); UK Parliament ("The Gunpowder Plot").
 **Accuracy guardrails:** He was arrested, then executed in 1606. Keep that out of a cute video or mention it plainly without gore. "Pretty much anyone" reflects modern gender-neutral use in many places.
 
@@ -617,6 +635,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** the Movember logo or campaign branding; real founders' likenesses.
 **Caption:** Movember: mustache season is a whole charity 🥸 #didyouknow #movember #history #november
+**Pinned comment:** Movember started as a pub dare 🥸 What's the best (or worst) mustache you've ever seen?
 **Source:** Movember Foundation ("Our story").
 **Accuracy guardrails:** Founders are commonly credited as Travis Garone and Luke Slattery; no need to name them. "About thirty" is the usual figure.
 
@@ -645,6 +664,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** characters or styles from animated Day of the Dead films; trademarked catrina designs. Keep it respectful: no jokey skulls.
 **Caption:** Monarch butterfly season: some journeys are worth it 🦋 #didyouknow #monarchbutterfly #diadelosmuertos #nature
+**Pinned comment:** Some trips are worth the distance 🦋 Have you ever seen monarchs on their migration?
 **Source:** U.S. Forest Service ("Monarch Butterfly Migration"); WWF Mexico; Monarch Butterfly Biosphere Reserve (UNESCO).
 **Accuracy guardrails:** Arrival is typically late October to early November. Say "in some communities." It's a cultural belief, not universal, and not religious doctrine. Shelf life: strongest in late October 2027.
 
@@ -672,6 +692,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** NASA's logo/meatball insignia, real astronaut likenesses, Santa's face from any brand campaign.
 **Caption:** The first Christmas song in space was a prank (1965) 🎄🚀 #didyouknow #space #christmas #history
+**Pinned comment:** Astronauts smuggled a harmonica into space just to do a bit 🎄🚀 What song would you play first in orbit?
 **Source:** Smithsonian National Air and Space Museum (Gemini 6 harmonica and bells); NASA history office.
 **Accuracy guardrails:** Gemini 6A, Dec 16, 1965; the crew was Wally Schirra and Tom Stafford (no need to name them). "Jingle Bells" (1857) is public domain, so the melody is safe to use. Shelf life: Dec 1–20.
 
@@ -699,6 +720,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** email app logos or interfaces, Microsoft branding, real person likenesses.
 **Caption:** Email's @ is the most important symbol you never think about 📧 #didyouknow #tech #history #email
+**Pinned comment:** You, at, this machine 📧 How old were you when you made your first email address, and how embarrassing was it?
 **Source:** Computer History Museum; Raytheon BBN Technologies histories of ARPANET email (Ray Tomlinson).
 **Accuracy guardrails:** Ray Tomlinson sent the first networked email between two machines on ARPANET. "First network emails" is accurate; email on a single computer existed earlier.
 
@@ -727,6 +749,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** store names, logos, or any real character balloons (cartoon or brand mascots). Only original balloon designs.
 **Caption:** Thanksgiving used to include a scavenger hunt 🎈 #didyouknow #thanksgiving #history #parade
+**Pinned comment:** People used to chase runaway parade balloons for a cash reward 🎈 Would you mail it back or keep it?
 **Source:** Macy's parade history archives; *Smithsonian* magazine; NYC Municipal Archives.
 **Accuracy guardrails:** Releases ran roughly 1928–1932; the plane incident was 1932 and the pilot landed safely, so keep it comic. Saying "the big New York parade" in VO avoids leaning on the brand.
 
@@ -755,6 +778,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 **Never draw:** the Costco logo, red/blue store branding, membership cards, warehouse signage, or any people.
 **Caption:** Inflation fears the Costco hot dog 🌭 #didyouknow #costco #food #prices
+**Pinned comment:** $1.50 since 1985 🌭 What's your "this price better never change" item?
 **Source:** Fortune (2026), Costco CEO statements on the $1.50 combo; Newsweek; Spokesman-Review.
 **Accuracy guardrails:** As of November 2026 the combo is still $1.50, and since spring 2026 it can come with a soda or bottled water. Re-check before posting, since prices can change. Inflation estimates vary ($4–$4.65), so keep "well over four dollars."
 
@@ -769,4 +793,5 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 - [ ] Ep 23 ends on its PSA card; read comments before replying
 - [ ] Ep 28 end card: "Don't try lead eyeliner."
 - [ ] Re-check time-sensitive facts (Ep 37 price) on posting day
+- [ ] Right after posting, add the episode's **Pinned comment** and pin it
 - [ ] Post order: 15 → 36 → 14 → 18 → 26 → 23, then by shelf life
