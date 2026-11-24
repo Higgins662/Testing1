@@ -37,3 +37,13 @@ python3 vids/tools/outliers.py audit posts.tsv --packs vids/*.md
 - **audit:** ranks your own posts and shows which formula, voice, topic, trend and music did better than your median.
   - TSV columns: `ep  views  [likes] [comments] [shares] [saves] [follows] [music] [...]`
   - `--packs` fills in each episode's hook, voice and topic details from the pack files.
+
+## posting_log.tsv: one row per posted episode
+
+`vids/posting_log.tsv` lists every posted episode with its post date and music. Add a row each time you post.
+
+When it's time for an audit:
+- Fill in the Insights numbers (views, likes, comments, shares, saves, follows) for posts that are at least 3–7 days old.
+- Run `python3 vids/tools/outliers.py audit vids/posting_log.tsv --packs vids/*.md` from the repo root.
+
+Rows that don't have views yet are skipped, so newer posts can stay in the log.
