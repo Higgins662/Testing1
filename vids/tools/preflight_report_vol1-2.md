@@ -14,7 +14,6 @@
 | 10 | Dust Isn't You | 90 | STRONG | SPECIFIC | 23s/22s | 0 |
 | 11 | The Goblin Metal | 72 | OK | SPECIFIC | 26s/24s | 0 |
 | 12 | Mudlarks | 80 | STRONG | SURPRISE | 30s/25s | 0 |
-| 13 | Hippo Sunscreen | 84 | STRONG | SURPRISE | 26s/24s | 0 |
 | 14 | Cops Named It | 90 | STRONG | OPEN LOOP | 29s/23s | 0 |
 | 15 | Turkeys in Trees | 84 | STRONG | SPECIFIC | 24s/22s | 0 |
 | 16 | The Car Alarm Bird | 90 | STRONG | SURPRISE | 24s/23s | 0 |
@@ -41,7 +40,7 @@
 | 37 | The $1.50 Hot Dog | 90 | STRONG | OPEN LOOP | 25s/22s | 0 |
 VO runs +3s vs the labeled length on median (at 150 wpm)
 
-Median hook score 84 · STRONG 29 · OK 8 · WEAK 0
+Median hook score 84.0 · STRONG 28 · OK 8 · WEAK 0
 
 ## Fix list
 - **08 Crab Conga**: hook 74 OK: no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks

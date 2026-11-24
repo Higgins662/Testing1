@@ -1,6 +1,6 @@
 # Pocketfuzzy — "Did You Know?" Animation Pack (Vol. 2)
 
-25 short animated explainers, each tied to something that went viral between late October and late November 2026. Numbering continues from Vol. 1 (episodes 13–37). Every episode is built to be **fully original cartoon**: the trend lives in the voiceover and caption only, never in the picture.
+24 short animated explainers, each tied to something that went viral between late October and late November 2026. Numbering continues from Vol. 1 (episodes 14–37; Ep 13 was cut). Every episode is built to be **fully original cartoon**: the trend lives in the voiceover and caption only, never in the picture.
 
 ---
 
@@ -20,7 +20,7 @@ These episodes ride real news, so every episode has a **Never draw** line. The g
 2. **No other studios' characters or worlds.** No film/game/show characters, creatures, symbols, title cards, color schemes or signature looks.
 3. **No logos or brand liveries.** Brand names can be *said* in VO when they're part of the fact; logos, packaging and store/airline/team designs are never drawn.
 4. **No recreations of viral images.** Don't redraw the meme or the news photo. Draw the underlying subject your own way.
-5. **Sensitive news gets a gentle tone.** Ep 13 (hippo) and Ep 23 (quokka) are about real animals that were harmed. No jokes at their expense; both end on a kindness/PSA card.
+5. **Sensitive news gets a gentle tone.** Ep 23 (quokka) is about a real animal that was harmed. No jokes at its expense; it ends on a kindness/PSA card.
 6. **Don't put trend names in generator prompts.** Words like "Godzilla," "Pokémon" or "James Bond" make video generators copy the IP. Prompts describe only what's on screen.
 
 ---
@@ -31,7 +31,7 @@ Same six-voice Kokoro pool as Vol. 1, randomly assigned with no voice on back-to
 
 | Ep | Title | Voice | | Ep | Title | Voice |
 |---|---|---|---|---|---|---|
-| 13 | Hippo Sunscreen | Emma | | 26 | The Broom Goblin | Heart |
+| | | | | 26 | The Broom Goblin | Heart |
 | 14 | Cops Named It | George | | 27 | Cloud Nap | Puck |
 | 15 | Turkeys in Trees | Emma | | 28 | Medicine Eyeliner | Michael |
 | 16 | The Car Alarm Bird | George | | 29 | Your Tongue on a Plane | Lewis |
@@ -66,7 +66,6 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 
 | Ep | Title | Trend hook | Shelf life |
 |---|---|---|---|
-| 13 | Hippo Sunscreen | Fiona the hippo | Post now, gently |
 | 14 | Cops Named It | Black Friday | Before Nov 27 |
 | 15 | Turkeys in Trees | Thanksgiving | Before Nov 26 |
 | 16 | The Car Alarm Bird | Hunger Games prequel | ~2 weeks |
@@ -92,35 +91,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 36 | Runaway Balloons | Thanksgiving parade | Before Nov 26 |
 | 37 | The $1.50 Hot Dog | Costco water scramble | Evergreen |
 
-**Suggested first week:** 15 → 36 → 14 → 13 → 18 → 26 → 23
-
----
-
-## 13 — Hippo Sunscreen
-
-**Length:** ~24s · **Voice:** Emma · **Trend:** Fiona the hippo (died Nov 19, 2026)
-**Hook:** Hippos make their own sunscreen. And it's red.
-
-### Voiceover script
-> Hippos make their own sunscreen. And it's red.
-> Their skin oozes a thick, reddish fluid that people used to call "blood sweat."
-> It isn't blood, and it isn't really sweat. Scientists found it blocks sunlight and may even fight germs.
-> Lately, a lot of people have been missing one very famous hippo.
-> So here's to hippos: tougher than they look, softer than you'd think.
-
-### Shot list
-| Shot | Time | Visual prompt | On-screen text | SFX |
-|---|---|---|---|---|
-| 1 | 0:00–0:04 | A round, gentle cartoon hippo surfacing in a sunlit river, water dripping, squinting happily at the sun. | HIPPOS MAKE THEIR OWN SUNSCREEN | soft splash |
-| 2 | 0:04–0:09 | Close-up of the hippo's back glistening as droplets turn from clear to rosy red, catching the light like syrup. | "BLOOD SWEAT" | gentle shimmer |
-| 3 | 0:09–0:15 | Cartoon sun rays bouncing off a shiny red layer on the hippo's skin; tiny cartoon germs slide off and tumble away. | BLOCKS SUN · MAY FIGHT GERMS | boing, tiny squeaks |
-| 4 | 0:15–0:20 | The hippo resting in shallow water at golden hour, eyes half-closed, a small bird perched on its head. | (none) | quiet river, birdsong |
-| 5 | 0:20–0:24 | Soft end card: a small hippo silhouette in warm light; the armless Fuzz sits quietly beside it. Text card fades in. | PLEASE NEVER THROW THINGS INTO ANIMAL HABITATS | soft chime |
-
-**Never draw:** Fiona herself (no premature-baby scenes, no ears/markings meant to be her), the Cincinnati Zoo, the hat, any vet or medical scene.
-**Caption:** Hippos are tougher than they look, and softer than you'd think 🦛 #didyouknow #hippo #animalfacts #nature
-**Source:** Saikawa et al., "The red sweat of the hippopotamus," *Nature* (2004); coverage of Fiona's death (AP, Nov 19, 2026).
-**Accuracy guardrails:** Say the fluid "may" fight germs, since the antibacterial effect is suggested, not fully settled. Don't describe how Fiona died in the video. **Tone check:** no puns, no "fun fact!" energy. Consider waiting a few days after the news if comments feel raw.
+**Suggested first week:** 15 → 36 → 14 → 18 → 26 → 23
 
 ---
 
@@ -795,7 +766,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 - [ ] Keep trend names out of generator prompts; describe only what's on screen
 - [ ] Generate each VO line separately with the episode's assigned voice; time captions to speech
 - [ ] Bottom-left `pocketfuzzy` watermark on every episode
-- [ ] Ep 13 & Ep 23 end on their PSA cards; read comments before replying
+- [ ] Ep 23 ends on its PSA card; read comments before replying
 - [ ] Ep 28 end card: "Don't try lead eyeliner."
 - [ ] Re-check time-sensitive facts (Ep 37 price) on posting day
-- [ ] Post order: 15 → 36 → 14 → 13 → 18 → 26 → 23, then by shelf life
+- [ ] Post order: 15 → 36 → 14 → 18 → 26 → 23, then by shelf life
