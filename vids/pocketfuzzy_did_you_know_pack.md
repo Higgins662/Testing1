@@ -9,7 +9,7 @@
 | Setting | Value |
 |---|---|
 | Aspect ratio | 9:16 vertical (1080×1920) |
-| Target length | 20–28 seconds |
+| Target length | 20–30 seconds (flexible: anywhere in that range is fine) |
 | Frame rate | 24 fps |
 | Shots per video | 4–5 (most generators cap at 5–10s per clip) |
 | Voiceover pace | ~150 words/min; scripts are written to fit |

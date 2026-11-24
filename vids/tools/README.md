@@ -20,7 +20,7 @@ What it checks:
   - There are at most 5 hashtags, and one of them is #didyouknow.
   - A topic word appears in the caption text itself.
   - There's at most one call to action.
-- **VO timing.** The script is timed at 150 words per minute and must fit under the 28-second cap.
+- **VO timing.** The script is timed at 150 words per minute and must land anywhere in the 20–30 second range.
 
 The scores are rough heuristics. They're good at catching weak hooks, but they can't pick the winner between two decent ones. `preflight_report_vol1-2.md` holds the first run over episodes 01–37.
 

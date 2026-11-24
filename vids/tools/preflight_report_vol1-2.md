@@ -44,17 +44,16 @@ VO runs +3s vs the labeled length on median (at 150 wpm)
 Median hook score 84 · STRONG 26 · OK 10 · WEAK 1
 
 ## Fix list
-- **01 The Magpie Myth**: VO is 76 words ≈ 30s, over the 28s cap
+- **01 The Magpie Myth**: VO is 76 words ≈ 30s, outside the 20–30s range
 - **03 Blue or Bust**: hook 74 OK: 13 words ≈ 5.2s; shot 1 is ~4s, cut words; no number or name: a count, date or place would sharpen it | caption SEARCH WORD: none of #bowerbird, #australia appear as words; Instagram search reads caption text
-- **04 The Pee Museum**: caption SEARCH WORD: none of #packrat appear as words; Instagram search reads caption text | VO is 73 words ≈ 29s, over the 28s cap
+- **04 The Pee Museum**: caption SEARCH WORD: none of #packrat appear as words; Instagram search reads caption text
 - **06 Otter Pockets**: caption SEARCH WORD: none of #seaotter, #otters appear as words; Instagram search reads caption text
 - **07 The Detachable Pocket**: caption SEARCH WORD: none of #fashionhistory, #pockets, #18thcentury appear as words; Instagram search reads caption text
 - **08 Crab Conga**: hook 74 OK: no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks | caption SEARCH WORD: none of #hermitcrab, #ocean appear as words; Instagram search reads caption text
 - **09 503 Samples**: caption SEARCH WORD: none of #bellybutton appear as words; Instagram search reads caption text
 - **10 Dust Isn't You**: caption SEARCH WORD: none of #cleaning, #home appear as words; Instagram search reads caption text
 - **11 The Goblin Metal**: hook 72 OK: slow opener: put the subject first; no number or name: a count, date or place would sharpen it
-- **12 Mudlarks**: VO is 76 words ≈ 30s, over the 28s cap
-- **14 Cops Named It**: VO is 72 words ≈ 29s, over the 28s cap
+- **12 Mudlarks**: VO is 76 words ≈ 30s, outside the 20–30s range
 - **16 The Car Alarm Bird**: hook 94 STRONG: LEANS ON TREND: makes no sense to someone who missed the news; name the actual subject; 13 words ≈ 5.2s; shot 1 is ~4s, cut words | caption SEARCH WORD: none of #mockingbird appear as words; Instagram search reads caption text
 - **18 The Birdwatcher Spy**: caption SEARCH WORD: none of #books appear as words; Instagram search reads caption text
 - **19 The First Bug**: caption SEARCH WORD: none of #computers appear as words; Instagram search reads caption text
@@ -69,7 +68,6 @@ Median hook score 84 · STRONG 26 · OK 10 · WEAK 1
 - **31 Hey Guys**: hook 74 OK: no number or name: a count, date or place would sharpen it | caption SEARCH WORD: none of #etymology, #bonfirenight appear as words; Instagram search reads caption text
 - **32 The Mustache Joke**: caption SEARCH WORD: none of #movember appear as words; Instagram search reads caption text
 - **33 Butterflies Come Home**: caption SEARCH WORD: none of #monarchbutterfly, #diadelosmuertos appear as words; Instagram search reads caption text
-- **34 The Space Prank**: caption SEARCH WORD: none of #space, #christmas appear as words; Instagram search reads caption text | VO is 71 words ≈ 28s, over the 28s cap
+- **34 The Space Prank**: caption SEARCH WORD: none of #space, #christmas appear as words; Instagram search reads caption text
 - **35 Why @**: hook 74 OK: 13 words ≈ 5.2s; shot 1 is ~4s, cut words; no number or name: a count, date or place would sharpen it; no twist word: fine if the fact itself is surprising; otherwise say what belief it breaks | caption SEARCH WORD: none of #email appear as words; Instagram search reads caption text
-- **36 Runaway Balloons**: VO is 75 words ≈ 30s, over the 28s cap
 - **37 The $1.50 Hot Dog**: caption SEARCH WORD: none of #costco, #prices appear as words; Instagram search reads caption text

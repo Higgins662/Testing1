@@ -6,7 +6,7 @@
 
 ## 0. Global settings
 
-Everything from **Vol. 1, Section 0** applies unchanged: 9:16 at 1080×1920, 20–28 s, 24 fps, 4–5 shots, burned-in word-by-word captions centered at y ≈ 1360, the bottom-left `pocketfuzzy` watermark at 70%, the armless Fuzz, voice ducking, and the series bookends. Music now follows the **Music rotation** below rather than the old music-box bed.
+Everything from **Vol. 1, Section 0** applies unchanged: 9:16 at 1080×1920, 20–30 s (flexible), 24 fps, 4–5 shots, burned-in word-by-word captions centered at y ≈ 1360, the bottom-left `pocketfuzzy` watermark at 70%, the armless Fuzz, voice ducking, and the series bookends. Music now follows the **Music rotation** below rather than the old music-box bed.
 
 ### Style block — paste at the end of EVERY visual prompt
 

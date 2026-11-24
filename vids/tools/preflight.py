@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pocketfuzzy preflight: score hooks, lint captions, check VO timing.
 
-Usage:
+Usage (VO length passes anywhere in the 20–30s range):
   python3 preflight.py pack.md [more_packs.md ...]      # check every episode in a pack
   python3 preflight.py --hook "Otters have pockets."    # score one hook (repeatable)
   python3 preflight.py --caption "Text #didyouknow #otters"
@@ -14,7 +14,8 @@ SHOT1_SECONDS = 4              # the hook has to land inside shot 1
 HASHTAG_CAP = 5                # Instagram's current per-post cap
 VISIBLE_CHARS = 125            # feed shows roughly this much before "more"
 CAPTION_MAX = 2200
-MAX_SECONDS = 28               # house cap from the packs' global settings
+MIN_SECONDS = 20               # house length range from the packs' global settings:
+MAX_SECONDS = 30               # anything from 20 to 30 seconds is fine
 
 DEALBREAKERS = [r"^did you know", r"^hey\b", r"^hi\b", r"^welcome", r"^fun fact",
                 r"stop scrolling", r"wait for it", r"you won'?t believe",
@@ -129,7 +130,7 @@ def lint_caption(cap):
 def vo_timing(vo_lines, target):
     words = sum(len(re.findall(r"[\w'’$@-]+", l)) for l in vo_lines)
     secs = words / WPM * 60
-    ok = secs <= MAX_SECONDS
+    ok = MIN_SECONDS <= secs <= MAX_SECONDS
     return words, secs, ok
 
 
@@ -166,7 +167,7 @@ def report_pack(paths):
                 items.append(f"hook {hs['score']} {hs['rating']}: " + "; ".join(hs["flags"] + hs["notes"]))
             items += ["caption " + f for f in fails]
             if not ok:
-                items.append(f"VO is {w} words ≈ {s:.0f}s, over the {MAX_SECONDS}s cap")
+                items.append(f"VO is {w} words ≈ {s:.0f}s, outside the {MIN_SECONDS}–{MAX_SECONDS}s range")
             if items:
                 fixes.append((e["ep"], e["title"], items))
     print("| Ep | Title | Hook | Rating | Weakest | VO time | Caption fails |")
