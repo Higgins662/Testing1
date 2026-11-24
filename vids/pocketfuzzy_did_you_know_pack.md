@@ -162,7 +162,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 > Scientists at the University of Exeter put piles of shiny and non-shiny objects next to magpies' food… and the birds avoided both.
 > They weren't attracted to shine. They were nervous of anything new.
 > So why the myth? We notice the one time a magpie grabs something sparkly… and ignore every time it grabs a stick.
-> Turns out the thief was us. We just noticed the shiny stuff.
+> The thief was us. We just noticed the shiny stuff.
 
 ### Shot list
 | Shot | Time | Visual prompt | On-screen text | SFX |
@@ -227,7 +227,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:15–0:19 | Side-by-side: a mature male's bower full of vivid blue vs. a scruffy young male's bower with a few sad yellow leaves. | PROS: BLUE · ROOKIES: YELLOW | sad trombone (subtle) |
 | 5 | 0:19–0:23 | A female bowerbird inspecting the blue bower approvingly; the Fuzz in the corner holds up a blue bottle cap hopefully. | BLUE GETS YOU A DATE | pop |
 
-**Caption:** The pickiest interior designer in nature 💙 #didyouknow #bowerbird #birds #animalfacts #australia
+**Caption:** Satin bowerbirds: the pickiest interior designers in nature 💙 #didyouknow #bowerbird #birds #animalfacts #australia
 **Source:** BirdLife Australia (Satin Bowerbird); Field Museum; AMNH "Fast Facts: Bowerbirds"; The Nature Conservancy blog.
 **Accuracy guardrails:** This is specifically the *satin* bowerbird. Other bowerbird species prefer other colors.
 
@@ -254,7 +254,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:15–0:21 | A scientist cartoon in a field lab lowering a dark chunk into a bucket of water; ancient leaves and seeds float free. | TENS OF THOUSANDS OF YEARS OLD | bubbling |
 | 5 | 0:21–0:25 | The packrat standing behind a velvet rope in a tiny museum, its midden in a glass case with a placard; it adjusts a little bow tie. | HOARD LONG ENOUGH… | pop |
 
-**Caption:** Scientists literally study rat pee to read the past 🐀 #didyouknow #packrat #science #gross #history
+**Caption:** Scientists literally read the past in packrat pee 🐀 #didyouknow #packrat #science #gross #history
 **Source:** U.S. National Park Service, "Studying the Past and Predicting the Future Using Rat Nests"; Smithsonian Magazine (amberat specimens up to ~50,000 years); *Packrat Middens: The Last 40,000 Years of Biotic Change* (Univ. of Arizona Press).
 **Accuracy guardrails:** Say "up to" or "could be" 50,000 years. That's the oldest end, near the limit of carbon dating, not every midden.
 
@@ -308,7 +308,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:14–0:19 | Back at the surface, the otter places a clam on its belly and bonks it with its favorite rock until it cracks. | (none) | bonk bonk crack |
 | 5 | 0:19–0:22 | The otter hugs its rock lovingly; the Fuzz pulls a small pebble out of its own pocket and hugs it too. | POCKET ROCK | pop |
 
-**Caption:** Everyone needs a pocket rock 🦦 #didyouknow #seaotter #otters #animalfacts #cute
+**Caption:** Sea otters: everyone needs a pocket rock 🦦 #didyouknow #seaotter #otters #animalfacts #cute
 **Source:** NOAA Ocean Today, "Sea Otter Anatomy"; Encyclopedia of Life (EOL) sea otter account.
 **Accuracy guardrails:** The pouches are loose skin folds under the forearms. Don't call them pockets "in their fur" or "in their belly."
 **Note:** Strong candidate for a pinned intro post, since it ties the account name to the series.
@@ -336,7 +336,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:13–0:20 | Comedic sequence: the hand pulls out an ever-growing line of objects — keys, coins, folded letters, a small mirror, a needle case, a thimble, a spool of thread, a pocket of snacks — piling up on a table. | KEYS · MONEY · LETTERS · MIRROR · SEWING KIT | rapid clinks, building |
 | 5 | 0:20–0:24 | The Fuzz climbs out of the bottom of the tie-on pocket last, waving. | ONE POCKET. ZERO LIMITS. | pop |
 
-**Caption:** The original "everything bag" 👜 #didyouknow #history #fashionhistory #pockets #18thcentury
+**Caption:** Tie-on pockets were the original "everything bag" 👜 #didyouknow #history #fashionhistory #pockets #18thcentury
 **Source:** Victoria and Albert Museum, "Women's tie-on pockets" and collection records; Burman & Fennetaux, *The Pocket: A Hidden History of Women's Lives, 1660–1900*.
 **Accuracy guardrails:** Tie-on pockets were common roughly 1650s–late 1800s, especially in Britain. Keep it "in the 1700s" or "for about 200 years." Don't claim they were universal worldwide.
 
@@ -363,7 +363,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:16–0:20 | Wide shot of all crabs in shiny new homes, admiring themselves. | A VACANCY CHAIN | cheer |
 | 5 | 0:20–0:24 | The tiniest crab at the end, holding a cracked shell with a hole in it, looking at the camera; the Fuzz hands it a thimble. | …EXCEPT THE LITTLE GUY | sad note, then pop |
 
-**Caption:** The most organized housing market on Earth 🦀 #didyouknow #hermitcrab #ocean #animalfacts #nature
+**Caption:** Hermit crabs run the most organized housing market on Earth 🦀 #didyouknow #hermitcrab #ocean #animalfacts #nature
 **Source:** Scientific American (Lewis & Rotjan research on synchronous vacancy chains); Discover Magazine; Tufts Journal.
 **Accuracy guardrails:** Not every crab ends up better off. The last one sometimes gets a damaged shell, which is the joke. It's a real but not universal behavior ("some hermit crabs," "can form").
 
@@ -390,7 +390,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:15–0:20 | Top-down stylized diagram: belly hairs growing in a spiral around a navel, fibers swirling inward like water circling a drain. | LIKE A DRAIN | swirling whoosh |
 | 5 | 0:20–0:24 | Tiny belly hairs drawn as little sheepdogs herding fluffy fibers into the belly button; the Fuzz waves goodbye as it gets herded in. | YOUR BELLY HAIR IS HERDING YOUR SHIRT | pop |
 
-**Caption:** Science has answered the question nobody asked (but everyone wondered) 🔬 #didyouknow #science #gross #weirdscience #bellybutton
+**Caption:** Science solved belly button lint: the question nobody asked (but everyone wondered) 🔬 #didyouknow #science #gross #weirdscience #bellybutton
 **Source:** Steinhauser, "The nature of navel fluff," *Medical Hypotheses* (2009); coverage in TIME and Fox News.
 **Accuracy guardrails:** "503 samples" and "three years" both come from coverage of the study. Lint is mostly clothing fibers, plus some dust and skin cells.
 
@@ -417,7 +417,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 | 4 | 0:15–0:19 | A single skin flake sitting in the back row of a dust bunny "family photo," crowded out by soil grains and pollen. | NOT THE MAIN CHARACTER | camera click |
 | 5 | 0:19–0:22 | The dust bunny opens the front door and waves at the outdoors like it's family. | IT'S LITERALLY THE OUTDOORS | pop |
 
-**Caption:** Stop blaming yourself for the dust 🧹 #didyouknow #mythbusting #science #cleaning #home
+**Caption:** Stop blaming yourself for the dust in your home 🧹 #didyouknow #mythbusting #science #cleaning #home
 **Source:** Layton & Beamer, "Migration of Contaminated Soil and Airborne Particulates to Indoor Dust," *Environmental Science & Technology* (2009); ScienceDaily / Phys.org coverage.
 **Accuracy guardrails:** The 60% figure comes from a modeling study of Midwestern U.S. homes. Mix varies by house, climate, pets and so on. Keep it "studies estimate" or "one study found," not a universal law.
 
@@ -458,7 +458,7 @@ ffmpeg -i episode.mp4 -i pocketfuzzy_watermark.png \
 ### Voiceover script
 > Victorian kids dug through the Thames mud for anything they could sell.
 > They were called mudlarks, mostly children from about eight to fifteen, wading through river muck at low tide for coal, nails, rope, scraps of metal.
-> Today, mudlarking is a licensed hobby, and the mud is still giving things up.
+> Today it's a licensed hobby, and the mud still gives things up.
 > Roman tiles. Medieval pins. Clay pipes. Two thousand years of London, washing up at low tide.
 > One person's river trash is another person's Roman tile.
 

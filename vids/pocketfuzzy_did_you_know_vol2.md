@@ -182,26 +182,26 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 ## 16 — The Car Alarm Bird
 
 **Length:** ~23s · **Voice:** George · **Trend:** *Sunrise on the Reaping* in theaters (Nov 20)
-**Hook:** That bird from the movies is made up. The real one is weirder.
+**Hook:** Mockingbirds can learn around 200 songs. Including car alarms.
 
 ### Voiceover script
+> Mockingbirds can learn around two hundred songs. Including car alarms.
 > That famous movie bird is made up. The real one is weirder.
-> Northern mockingbirds can learn around two hundred different songs.
-> They copy other birds, frogs, squeaky gates, and yes, car alarms.
+> They copy other birds, frogs, squeaky gates, and anything that beeps.
 > Some keep learning new sounds their whole lives, and males sing all night to impress mates.
 > Nature already had a mimic. It just has worse taste in music.
 
 ### Shot list
 | Shot | Time | Visual prompt | On-screen text | SFX |
 |---|---|---|---|---|
-| 1 | 0:00–0:04 | A grey mockingbird with white wing patches on a suburban fence at dusk, puffing its chest, eyes mischievous. | THE REAL ONE IS WEIRDER | quiet chirp |
+| 1 | 0:00–0:04 | A grey mockingbird with white wing patches on a suburban fence at dusk, puffing its chest, eyes mischievous. | MOCKINGBIRDS COPY CAR ALARMS | quiet chirp |
 | 2 | 0:04–0:09 | The bird surrounded by floating cartoon "sound bubbles," each with a tiny icon: another bird, a frog, a gate. | ~200 SONGS | rapid medley of chirps |
 | 3 | 0:09–0:15 | The bird hopping onto a parked generic car hood and opening its beak; cartoon alarm-wave lines blast out, a neighbor's window light flicks on. | CAR ALARMS TOO | car alarm imitation |
 | 4 | 0:15–0:20 | Moonlit rooftop: the bird belting a song at 3am while a sleepy cat covers its ears with its paws. | SINGS ALL NIGHT | warbling, cat groan |
 | 5 | 0:20–0:23 | The Fuzz in a pocket wearing tiny earmuffs, nodding along anyway. | WORSE TASTE IN MUSIC | pop |
 
 **Never draw:** a pin, emblem, arrows, flaming outfits or anything from the film series; no fictional "mockingjay" design.
-**Caption:** Nature's original sound mimic 🐦 #didyouknow #birds #mockingbird #animalfacts
+**Caption:** Mockingbirds: nature's original sound mimic 🐦 #didyouknow #birds #mockingbird #animalfacts
 **Source:** Cornell Lab of Ornithology, *All About Birds* (Northern Mockingbird).
 **Accuracy guardrails:** "Around 200" is the commonly cited upper range for an individual male. Night singing is mostly unmated males in spring. Saying "famous movie bird" in VO is fine; don't name it in prompts.
 
@@ -256,7 +256,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:20–0:23 | The birdwatcher sipping tea in a hammock with birds on his binoculars; the Fuzz in his shirt pocket. | LICENSED TO CHILL | pop |
 
 **Never draw:** any actor, the gun-barrel shot, "007" or logo, guns, martini glasses, Aston Martins, film poster poses. The tuxedo silhouette stays generic and unarmed.
-**Caption:** The real James Bond had binoculars, not gadgets 🐦 #didyouknow #history #birds #books
+**Caption:** The real James Bond had binoculars and bird books, not gadgets 🐦 #didyouknow #history #birds #books
 **Source:** Ian Fleming's own account (interviews); Academy of Natural Sciences of Drexel University (James Bond, ornithologist).
 **Accuracy guardrails:** Fleming wrote at his Jamaica home, Goldeneye. Don't mention or imply the new casting visually; the VO can skip the actor entirely.
 
@@ -284,7 +284,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:22 | A modern laptop showing a blank inbox; the Fuzz peeks behind it holding a tiny flashlight, searching for moths. | CHECK FOR MOTHS | pop |
 
 **Never draw:** Microsoft or any software logos, real app interfaces, recognizable historical people.
-**Caption:** Debugging used to be literal 🦋💻 #didyouknow #tech #history #computers
+**Caption:** Computer debugging used to be literal 🦋💻 #didyouknow #tech #history #computers
 **Source:** Smithsonian National Museum of American History (Harvard Mark II logbook, 1947); U.S. Naval History and Heritage Command.
 **Accuracy guardrails:** "Bug" as slang for a glitch existed before 1947. This is the first *actual* bug, which is the joke in the note. Don't say Grace Hopper found it; she popularized the story.
 
@@ -368,7 +368,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:20–0:24 | The slime blob in a conductor's cap honking a tiny horn; the Fuzz rides on top like a passenger. | ABOUT A DAY'S WORK | toot, pop |
 
 **Never draw:** any award show, blimp, network logo or the celebrity who was slimed; the real rail operator's logos or exact map design.
-**Caption:** Slime > engineers?? 🟡🚆 #didyouknow #science #slimemold #trains
+**Caption:** Slime mold > train engineers?? 🟡🚆 #didyouknow #science #slimemold #trains
 **Source:** Tero et al., "Rules for Biologically Inspired Adaptive Network Design," *Science* (2010).
 **Accuracy guardrails:** The species is *Physarum polycephalum*. It's not a fungus, so don't call it one. Say "remarkably like," not "identical to." "About a day" matches the reported ~26 hours.
 
@@ -396,7 +396,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:23 | A quokka resting in the shade with a respectful-distance dotted line drawn around it; the Fuzz watches from behind the line. | LOOK, DON'T TOUCH | soft chime |
 
 **Never draw:** vapes, cigarettes, selfies with quokkas, people touching or feeding quokkas, the viral photo.
-**Caption:** The world's happiest-looking animal deserves some space 🦘 #didyouknow #quokka #australia #animalfacts
+**Caption:** Quokkas: the world's happiest-looking animal deserves some space 🦘 #didyouknow #quokka #australia #animalfacts
 **Source:** Rottnest Island Authority (history and quokka guidelines); Western Australian Museum.
 **Accuracy guardrails:** The captain was Willem de Vlamingh. It's illegal to touch or feed quokkas on Rottnest, so keep the PSA. Quokkas aren't actually smiling; the look comes from their face shape.
 
@@ -405,26 +405,26 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 ## 24 — See-Through Bear
 
 **Length:** ~22s · **Voice:** Puck · **Trend:** "Remember November 2026" polar bear meme (it's finally November 2026)
-**Hook:** November 2026 is here. So let's talk about the polar bear.
+**Hook:** Polar bears aren't white. And their skin is black.
 
 ### Voiceover script
-> November 2026 is here. So let's talk about the polar bear.
-> Polar bear fur isn't white. Each hair is clear and hollow, and it scatters light, the same way snow looks white even though ice is clear.
-> And under all that fur? Black skin, to soak up the sun's heat.
+> Polar bears aren't white. And their skin is black.
+> Each hair is clear and hollow, and it scatters light, the same way snow looks white even though ice is clear.
+> Underneath, that black skin soaks up the sun's heat.
 > So it's a black bear in a see-through coat.
 > You've been lied to by your own eyes.
 
 ### Shot list
 | Shot | Time | Visual prompt | On-screen text | SFX |
 |---|---|---|---|---|
-| 1 | 0:00–0:04 | A fluffy, friendly cartoon polar bear sitting on an ice floe under pale arctic daylight, giving a little wave. | IT'S NOVEMBER 2026 | wind, cute grunt |
+| 1 | 0:00–0:04 | A fluffy, friendly cartoon polar bear sitting on an ice floe under pale arctic daylight, giving a little wave. | POLAR BEARS AREN'T WHITE | wind, cute grunt |
 | 2 | 0:04–0:09 | Microscope zoom into a single hair: a clear glassy tube with a hollow core; light rays bounce off and scatter as white sparkles. | EACH HAIR IS CLEAR | glassy shimmer |
 | 3 | 0:09–0:14 | Side gag: a pile of clear ice cubes next to a pile of white snow, with a "same stuff" equals sign between them. | LIKE SNOW | crunch |
 | 4 | 0:14–0:18 | X-ray style cutaway: the bear's fur turns translucent, revealing jet-black skin underneath; little sun rays absorbed into it. | BLACK SKIN UNDERNEATH | whoosh |
 | 5 | 0:18–0:22 | The bear holding a "see-through coat" on a hanger, looking embarrassed; the Fuzz in a mirror-world parka, shocked. | LIED TO BY YOUR EYES | pop |
 
 **Never draw:** the AI meme image or its pose (propped up on front paws at night), creepy styling, anything copying the meme video.
-**Caption:** Remember November 2026? It's here 🐻‍❄️ #didyouknow #polarbear #science #november2026
+**Caption:** Polar bears aren't even white. Remember November 2026? 🐻‍❄️ #didyouknow #polarbear #science #november2026
 **Source:** Polar Bears International ("Polar Bear Fur and Skin"); U.S. Fish & Wildlife Service.
 **Accuracy guardrails:** "Clear and hollow" is the standard explanation. Debunk the old myth that the hairs act like fiber-optic cables carrying light to the skin; don't say they "pipe light."
 
@@ -452,7 +452,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:20–0:23 | A shelf of the boy's bug jars glowing softly; the Fuzz sitting in one jar, happily. | BUG GOBLIN FIRST | pop |
 
 **Never draw:** any Pokémon creature (including "inspired by" designs), Poké Balls, the logo, trainer outfits, real console branding, or a likeness of Tajiri.
-**Caption:** Every collector starts somewhere 🪲 #didyouknow #gaming #history #bugs
+**Caption:** Every collector starts somewhere. His start was bugs 🪲 #didyouknow #gaming #history #bugs
 **Source:** Tajiri interviews (TIME, 1999); Nintendo/Game Freak histories.
 **Accuracy guardrails:** He grew up in Machida, on the outskirts of Tokyo. Pokémon launched in Japan in February 1996; "thirty years ago" holds for 2026. Keep the sketched creatures generic bugs, not monster designs.
 
@@ -589,7 +589,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:18–0:21 | The pumpkin and the turnip side by side on a porch; the turnip slowly turns to stare at the camera. The Fuzz hides behind the pumpkin. | THE TURNIPS STILL HAUNT US | pop |
 
 **Never draw:** characters from horror films or famous Halloween properties.
-**Caption:** Be glad we switched to pumpkins 🎃 #didyouknow #halloween #history #folklore
+**Caption:** Halloween's first lanterns were turnips. Be glad we switched 🎃 #didyouknow #halloween #history #folklore
 **Source:** National Museum of Ireland (Country Life collection); English Heritage on Samhain traditions.
 **Accuracy guardrails:** Turnips, swedes and mangelwurzels were all used, so "turnips and other root vegetables" covers it. Shelf life: post now as a "Halloween's over, but…" or save for October 2027.
 
@@ -617,7 +617,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:22 | A group of cartoon friends waving at the camera; the Fuzz waves back from a pocket. | HEY GUYS | pop |
 
 **Never draw:** the white smiling Guy Fawkes mask (that design comes from *V for Vendetta* and is trademarked); real-person portraits.
-**Caption:** You've been quoting 1605 this whole time 🔥 #didyouknow #etymology #history #bonfirenight
+**Caption:** Bonfire Night is why you say "guys." You've been quoting 1605 this whole time 🔥 #didyouknow #etymology #history #bonfirenight
 **Source:** Oxford English Dictionary ("guy," word history); UK Parliament ("The Gunpowder Plot").
 **Accuracy guardrails:** He was arrested, then executed in 1606. Keep that out of a cute video or mention it plainly without gore. "Pretty much anyone" reflects modern gender-neutral use in many places.
 
@@ -645,7 +645,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:18–0:21 | The Fuzz with a hilariously large fuzz-mustache drooping off its face. | NEVER UNDERESTIMATE A DARE | pop |
 
 **Never draw:** the Movember logo or campaign branding; real founders' likenesses.
-**Caption:** Mustache season is a whole charity 🥸 #didyouknow #movember #history #november
+**Caption:** Movember: mustache season is a whole charity 🥸 #didyouknow #movember #history #november
 **Source:** Movember Foundation ("Our story").
 **Accuracy guardrails:** Founders are commonly credited as Travis Garone and Luke Slattery; no need to name them. "About thirty" is the usual figure.
 
@@ -673,7 +673,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:20–0:23 | Butterflies lifting into a warm sunset; the Fuzz watching quietly from the altar's edge. | WORTH THE DISTANCE | soft pop |
 
 **Never draw:** characters or styles from animated Day of the Dead films; trademarked catrina designs. Keep it respectful: no jokey skulls.
-**Caption:** Some journeys are worth it 🦋 #didyouknow #monarchbutterfly #diadelosmuertos #nature
+**Caption:** Monarch butterfly season: some journeys are worth it 🦋 #didyouknow #monarchbutterfly #diadelosmuertos #nature
 **Source:** U.S. Forest Service ("Monarch Butterfly Migration"); WWF Mexico; Monarch Butterfly Biosphere Reserve (UNESCO).
 **Accuracy guardrails:** Arrival is typically late October to early November. Say "in some communities." It's a cultural belief, not universal, and not religious doctrine. Shelf life: strongest in late October 2027.
 
@@ -700,7 +700,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:23 | Mission Control engineers slowly cracking up; the Fuzz floats past the capsule window in a Santa hat. | THEN THEY LAUGHED | laughter, pop |
 
 **Never draw:** NASA's logo/meatball insignia, real astronaut likenesses, Santa's face from any brand campaign.
-**Caption:** Astronauts were trolling in 1965 🎄🚀 #didyouknow #space #christmas #history
+**Caption:** The first Christmas song in space was a prank (1965) 🎄🚀 #didyouknow #space #christmas #history
 **Source:** Smithsonian National Air and Space Museum (Gemini 6 harmonica and bells); NASA history office.
 **Accuracy guardrails:** Gemini 6A, Dec 16, 1965; the crew was Wally Schirra and Tom Stafford (no need to name them). "Jingle Bells" (1857) is public domain, so the melody is safe to use. Shelf life: Dec 1–20.
 
@@ -727,7 +727,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:21 | A tiny house shaped like an @ with the Fuzz waving from the window. | WE ALL LIVE AT IT | pop |
 
 **Never draw:** email app logos or interfaces, Microsoft branding, real person likenesses.
-**Caption:** The most important symbol you never think about 📧 #didyouknow #tech #history #email
+**Caption:** Email's @ is the most important symbol you never think about 📧 #didyouknow #tech #history #email
 **Source:** Computer History Museum; Raytheon BBN Technologies histories of ARPANET email (Ray Tomlinson).
 **Accuracy guardrails:** Ray Tomlinson sent the first networked email between two machines on ARPANET. "First network emails" is accurate; email on a single computer existed earlier.
 
@@ -783,7 +783,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 | 5 | 0:19–0:22 | The hot dog salutes like a soldier; the Fuzz salutes back from a pocket. | IT'S A PROMISE | pop |
 
 **Never draw:** the Costco logo, red/blue store branding, membership cards, warehouse signage, or any people.
-**Caption:** Inflation fears this hot dog 🌭 #didyouknow #costco #food #prices
+**Caption:** Inflation fears the Costco hot dog 🌭 #didyouknow #costco #food #prices
 **Source:** Fortune (2026), Costco CEO statements on the $1.50 combo; Newsweek; Spokesman-Review.
 **Accuracy guardrails:** As of November 2026 the combo is still $1.50, and since spring 2026 it can come with a soda or bottled water. Re-check before posting, since prices can change. Inflation estimates vary ($4–$4.65), so keep "well over four dollars."
 
