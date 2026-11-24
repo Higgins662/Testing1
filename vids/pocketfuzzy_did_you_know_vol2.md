@@ -6,7 +6,7 @@
 
 ## 0. Global settings
 
-Everything from **Vol. 1, Section 0** applies unchanged: 9:16 at 1080×1920, 20–28 s, 24 fps, 4–5 shots, burned-in word-by-word captions centered at y ≈ 1360, the bottom-left `pocketfuzzy` watermark at 70%, the armless Fuzz, the music-box bed with voice ducking, and the series bookends.
+Everything from **Vol. 1, Section 0** applies unchanged: 9:16 at 1080×1920, 20–28 s, 24 fps, 4–5 shots, burned-in word-by-word captions centered at y ≈ 1360, the bottom-left `pocketfuzzy` watermark at 70%, the armless Fuzz, voice ducking, and the series bookends. Music now follows the **Music rotation** below rather than the old music-box bed.
 
 ### Style block — paste at the end of EVERY visual prompt
 
@@ -44,6 +44,21 @@ Same six-voice Kokoro pool as Vol. 1, randomly assigned with no voice on back-to
 | 23 | Rat's Nest Island | Emma | | 36 | Runaway Balloons | George |
 | 24 | See-Through Bear | Puck | | 37 | The $1.50 Hot Dog | Heart |
 | 25 | Dr. Bug | Lewis | | | | |
+
+---
+
+## Music rotation (Vol. 2)
+
+Six styles rotate in a fixed order: folk → jazz → lo-fi → bossa nova → synthwave → ambient → repeat. See Vol. 1, Section 0, for the full style table. The next four episodes in posting order follow the rotation, and each style happens to fit its topic:
+
+| Next | Ep | Title | Music style | Why it fits |
+|---|---|---|---|---|
+| 1 | 15 | Turkeys in Trees | Acoustic folk | Woods, farms, Thanksgiving warmth |
+| 2 | 18 | The Birdwatcher Spy | Brushed jazz trio | 1950s spy-novel atmosphere |
+| 3 | 26 | The Broom Goblin | Lo-fi hip hop | Cozy, nighttime, a little mischievous |
+| 4 | 23 | Rat's Nest Island | Bossa nova | Beaches, sun, island breeze |
+
+After those, the rotation continues with synthwave, then ambient, then folk again. Already-made episodes (14, 24, 36) keep their music-box bed.
 
 ---
 

@@ -70,8 +70,23 @@ Swap any assignment freely if a voice fits a topic better, as with Emma on ep02.
 - For list beats ("Beads. Buttons. An earring."), generate each item separately and drop it in exactly when that item appears on screen.
 - Write shouted words in lowercase for the TTS ("the friend half"). All-caps can get spelled out. Keep the caps in the on-screen captions only.
 - Mix: voice on top, music ducked ~8 dB under speech, sound effects ducked ~4 dB.
-- **Music bed:** quiet plucky pizzicato or lo-fi music-box loop, -20 dB under VO.
+- **Music bed:** rotates through six mellow, grown-up styles (see **Music rotation** below). It sits about 9 dB under the voice and dips further while someone is speaking. The original music-box loop is retired. It read too kid-like.
 - **Signature sting:** a soft "pocket zip" or rustle sound on the hook, and a tiny "pop" on the payoff. Reuse it every episode.
+
+### Music rotation
+
+Each new episode takes the next style in this list, then the list repeats. Nothing hard or aggressive, and nothing nursery-rhyme. Everything is original and synthesized, so there's nothing to license.
+
+| # | Style | Feel | Tempo | Instruments |
+|---|---|---|---|---|
+| 1 | Acoustic folk | Warm, outdoorsy, unhurried | 92 bpm | Fingerpicked guitar, upright bass, shaker |
+| 2 | Brushed jazz trio | Late-night, a little sly | 116 bpm, swung | Piano comping, walking bass, ride cymbal, brushes |
+| 3 | Lo-fi hip hop | Cozy, head-nod | 78 bpm | Electric piano, dusty drums, bass, vinyl crackle |
+| 4 | Bossa nova | Breezy, sunny, coastal | 132 bpm | Nylon guitar, rim clicks, shaker, soft bass |
+| 5 | Chill synthwave | Dreamy, retro-futuristic | 96 bpm | Soft pads, arpeggio, synth bass, light drums |
+| 6 | Ambient downtempo | Spacious, curious, gentle | 84 bpm | Pads, sparse electric piano, sub bass, soft clicks |
+
+Already-made episodes keep their music-box bed: ep02, 14, 24 and 36. Swap a style if it fights the topic, the way voices get hand-picked. A quiet history episode probably shouldn't get synthwave.
 
 ### Series bookends
 
