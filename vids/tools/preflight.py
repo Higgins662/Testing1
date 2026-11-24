@@ -5,6 +5,11 @@ Usage (VO length passes anywhere in the 20–30s range):
   python3 preflight.py pack.md [more_packs.md ...]      # check every episode in a pack
   python3 preflight.py --hook "Otters have pockets."    # score one hook (repeatable)
   python3 preflight.py --caption "Text #didyouknow #otters"
+The episode packs live in Google Docs (Drive > Vids), not in this repo:
+  Pocketfuzzy Did You Know Pack (Vol 1)  https://docs.google.com/document/d/1HzbLPTaOeejR0k-ONxX-A7aXOp04THam7c__-Ut4SV8/edit
+  Pocketfuzzy Did You Know Pack (Vol 2)  https://docs.google.com/document/d/19YzBiI2QKU7u8OH4YY1N59oFuxfshdqptdVvwB991q0/edit
+Export each as Markdown (File > Download > Markdown, or Drive's text/markdown export) and pass
+the .md files here; Google's export format is read as-is.
 The scores are lexical heuristics: good at catching weak hooks, not at picking hits.
 """
 import re, sys, statistics
@@ -134,8 +139,31 @@ def vo_timing(vo_lines, target):
     return words, secs, ok
 
 
+
+def normalize(txt):
+    """Accept both repo markdown and Google Docs' markdown export of the packs."""
+    if "\\#" not in txt and not re.search(r"^#+ \*\*", txt, re.M):
+        return txt                                    # already repo-style markdown
+    out, in_vo = [], False
+    for line in txt.splitlines():
+        line = re.sub(r"\\([\\`*_{}\[\]()#+\-.!~|>$])", r"\1", line).rstrip()
+        line = re.sub(r"^(#+ )\*\*(.*?)\*\*$", r"\1\2", line)   # "## **14 — X**" -> "## 14 — X"
+        if line.startswith("#"):
+            in_vo = line.lower().startswith("### voiceover script")
+            out.append(line)
+            if in_vo:
+                out.append("")
+            continue
+        if in_vo:
+            if line:
+                out.append("> " + line)               # VO paragraphs -> blockquote lines
+            continue
+        out.append(line)
+    txt = "\n".join(out)
+    return re.sub(r"(### Voiceover script)\n\n>", r"\1\n>", txt)
+
 def parse_pack(path):
-    txt = open(path, encoding="utf-8").read()
+    txt = normalize(open(path, encoding="utf-8").read())
     eps = re.split(r"\n## (\d{2}) — ", txt)
     for i in range(1, len(eps), 2):
         num, body = eps[i], eps[i + 1]

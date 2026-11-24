@@ -8,6 +8,12 @@
       Rank your own posts and find which traits over-index. TSV columns:
       ep  views  [likes] [comments] [shares] [saves] [follows] [date] [any other trait columns]
       With --packs, hook, voice, trend and weird factor are filled in from the episode packs.
+
+The episode packs live in Google Docs (Drive > Vids), not in this repo:
+  Pocketfuzzy Did You Know Pack (Vol 1)  https://docs.google.com/document/d/1HzbLPTaOeejR0k-ONxX-A7aXOp04THam7c__-Ut4SV8/edit
+  Pocketfuzzy Did You Know Pack (Vol 2)  https://docs.google.com/document/d/19YzBiI2QKU7u8OH4YY1N59oFuxfshdqptdVvwB991q0/edit
+Export each as Markdown (File > Download > Markdown, or Drive's text/markdown export) and pass
+the .md files here; Google's export format is read as-is.
 """
 import csv, re, sys, statistics as st
 
@@ -92,10 +98,33 @@ def niche(path):
         print("Thin baselines (<6 reels, median is shaky): " + ", ".join(thin))
 
 
+
+def normalize(txt):
+    """Accept both repo markdown and Google Docs' markdown export of the packs."""
+    if "\\#" not in txt and not re.search(r"^#+ \*\*", txt, re.M):
+        return txt                                    # already repo-style markdown
+    out, in_vo = [], False
+    for line in txt.splitlines():
+        line = re.sub(r"\\([\\`*_{}\[\]()#+\-.!~|>$])", r"\1", line).rstrip()
+        line = re.sub(r"^(#+ )\*\*(.*?)\*\*$", r"\1\2", line)   # "## **14 — X**" -> "## 14 — X"
+        if line.startswith("#"):
+            in_vo = line.lower().startswith("### voiceover script")
+            out.append(line)
+            if in_vo:
+                out.append("")
+            continue
+        if in_vo:
+            if line:
+                out.append("> " + line)               # VO paragraphs -> blockquote lines
+            continue
+        out.append(line)
+    txt = "\n".join(out)
+    return re.sub(r"(### Voiceover script)\n\n>", r"\1\n>", txt)
+
 def pack_meta(paths):
     meta = {}
     for p in paths:
-        txt = open(p, encoding="utf-8").read()
+        txt = normalize(open(p, encoding="utf-8").read())
         for m in re.finditer(r"^\| (\d{2}) \| ([^|]+?) \| \*{0,2}(\w+)\*{0,2}[^|]*\|", txt, re.M):
             if m.group(3) in {"Michael", "Puck", "George", "Lewis", "Heart", "Emma"}:
                 meta.setdefault(m.group(1), {})["voice"] = m.group(3)
