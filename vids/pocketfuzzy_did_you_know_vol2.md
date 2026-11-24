@@ -105,7 +105,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 > Hippos make their own sunscreen. And it's red.
 > Their skin oozes a thick, reddish fluid that people used to call "blood sweat."
 > It isn't blood, and it isn't really sweat. Scientists found it blocks sunlight and may even fight germs.
-> This week, a lot of people are missing one very famous hippo.
+> Lately, a lot of people have been missing one very famous hippo.
 > So here's to hippos: tougher than they look, softer than you'd think.
 
 ### Shot list
@@ -461,7 +461,7 @@ After those, the rotation continues with synthwave, then ambient, then folk agai
 ## 26 — The Broom Goblin
 
 **Length:** ~24s · **Voice:** Heart · **Trend:** KPop Demon Hunters still everywhere
-**Hook:** In Korea, your old broom might turn into a goblin.
+**Hook:** In Korean folklore, your old broom might turn into a goblin.
 
 ### Voiceover script
 > In Korean folklore, your old broom might turn into a goblin.
