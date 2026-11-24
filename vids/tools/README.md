@@ -22,7 +22,7 @@ What it checks:
   - There's at most one call to action.
 - **VO timing.** The script is timed at 150 words per minute and must land anywhere in the 20–30 second range.
 
-The scores are rough heuristics. They're good at catching weak hooks, but they can't pick the winner between two decent ones. `preflight_report_vol1-2.md` holds the first run over episodes 01–37.
+The scores are rough heuristics. They're good at catching weak hooks, but they can't pick the winner between two decent ones. `preflight_report_vol1-2.md` holds the first run over episodes 01–37 (Ep 13 since cut).
 
 ## outliers.py: compare views to an account's own median
 

@@ -1,4 +1,4 @@
-# Pocketfuzzy preflight — Vol 1 & 2 (37 episodes)
+# Pocketfuzzy preflight — Vol 1 & 2 (36 episodes; Ep 13 cut)
 
 | Ep | Title | Hook | Rating | Weakest | VO time | Caption fails |
 |---|---|---|---|---|---|---|
