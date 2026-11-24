@@ -153,6 +153,9 @@ METRICS = {"views", "likes", "comments", "shares", "saves", "follows", "date", "
 
 def audit(path, packs):
     rows = [r for r in read_tsv(path) if num(r.get("views")) is not None]
+    if not rows:
+        print("No posts have views filled in yet: add Insights numbers to the log, then run the audit again.")
+        return
     meta = pack_meta(packs) if packs else {}
     for r in rows:
         ep = r.get("ep", "").zfill(2)
