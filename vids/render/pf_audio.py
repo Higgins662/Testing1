@@ -107,10 +107,20 @@ def flutter(dur=0.8):
     n = int(dur * SR); t = np.arange(n) / SR
     return lp(rng.normal(0, 1, n), 1500) * (0.5 + 0.5 * np.sin(2 * np.pi * 14 * t)) ** 3 * np.sin(np.pi * t / dur) * 0.5
 
-def build(dur, cues, sfx_events, out, melody='A', music_gain=0.5, style=None):
-    """style: one of pf_music.ROTATION (preferred). melody: legacy music-box fallback."""
+def build(dur, cues, sfx_events, out, melody='A', music_gain=0.5, style=None, loop=False):
+    """style: one of pf_music.ROTATION (preferred). melody: legacy music-box fallback.
+    loop: no music fades; the music's tail is crossfaded into its head and sound effects that
+    run past the end wrap to the start, so the file repeats seamlessly."""
     N = int(SR * dur)
-    if style:
+    if style and loop:
+        import pf_music
+        X = int(1.5 * SR)
+        full = pf_music.render(style, dur + 2.0, fades=False)
+        st = full[:N].copy()
+        r = np.linspace(0, 1, X)[:, None]
+        st[:X] = full[:X] * r + full[N:N + X] * (1 - r)
+        mus2 = st * 1.7
+    elif style:
         import pf_music
         st = pf_music.render(style, dur)[:N]
         st = np.pad(st, ((0, N - len(st)), (0, 0)))
@@ -121,8 +131,12 @@ def build(dur, cues, sfx_events, out, melody='A', music_gain=0.5, style=None):
     for (sig, t, g, pan) in sfx_events:
         i = int(t * SR)
         if i >= N: continue
-        s = np.asarray(sig, np.float32)[: N - i] * g
+        full_s = np.asarray(sig, np.float32) * g
+        s = full_s[: N - i]
         sfx[i:i + len(s), 0] += s * np.sqrt(0.5 * (1 - pan)); sfx[i:i + len(s), 1] += s * np.sqrt(0.5 * (1 + pan))
+        if loop and len(full_s) > N - i:
+            w_ = full_s[N - i:][:N]
+            sfx[:len(w_), 0] += w_ * np.sqrt(0.5 * (1 - pan)); sfx[:len(w_), 1] += w_ * np.sqrt(0.5 * (1 + pan))
     vo = np.zeros(N, np.float32)
     for path, st in cues:
         a, sr = sf.read(path)
@@ -130,13 +144,16 @@ def build(dur, cues, sfx_events, out, melody='A', music_gain=0.5, style=None):
         if sr == 24000: a = resample_poly(a, 147, 80)
         i = int(st * SR); vo[i:i + len(a)] += a[: N - i]
     vo = vo / (np.abs(vo).max() + 1e-9) * 0.9
-    envv = np.convolve(np.abs(vo), np.ones(441) / 441, 'same')
+    P = int(2.0 * SR) if loop else 0          # loop: run the ducking over the end first so the start inherits it
+    src = np.concatenate([vo[N - P:], vo]) if P else vo
+    envv = np.convolve(np.abs(src), np.ones(441) / 441, 'same')
     att, rel = np.exp(-1 / (0.02 * SR)), np.exp(-1 / (0.35 * SR))
-    e = np.zeros(N, np.float32); cur = 0.0
-    for i in range(0, N, 64):
+    ee = np.zeros(len(src), np.float32); cur = 0.0
+    for i in range(0, len(src), 64):
         v = envv[i:i + 64].max()
         cur = att * cur + (1 - att) * v if v > cur else rel * cur + (1 - rel) * v
-        e[i:i + 64] = cur
+        ee[i:i + 64] = cur
+    e = ee[P:]
     e = np.clip(e / 0.15, 0, 1)
     mix = np.zeros((N, 2), np.float32)
     mix += mus2 * music_gain * (1 - 0.62 * e)[:, None]

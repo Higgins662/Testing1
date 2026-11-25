@@ -347,9 +347,9 @@ WARM = np.array([1.02, 1.0, 0.96], np.float32)
 
 # ------------------------------------------------------------ episode runner
 class Episode:
-    def __init__(self, name, scenes, chunks, dur, end_tag_at, xf=0.34):
+    def __init__(self, name, scenes, chunks, dur, end_tag_at, xf=0.34, loop=False):
         self.name, self.scenes, self.chunks, self.dur = name, scenes, chunks, dur
-        self.end_tag_at, self.xf = end_tag_at, xf
+        self.end_tag_at, self.xf, self.loop = end_tag_at, xf, loop
 
     def scene_frame(self, t, frame):
         S = self.scenes
@@ -369,8 +369,9 @@ class Episode:
         img.alpha_composite(WATERMARK)
         arr = np.asarray(img.convert('RGB')).astype(np.float32)
         arr = arr * VIG * WARM + GRAIN[(frame // 2) % len(GRAIN)]
-        if t < 0.2: arr *= ease(t / 0.2)
-        if t > self.dur - 0.4: arr *= 1 - 0.85 * ease((t - (self.dur - 0.4)) / 0.4)
+        if not self.loop:   # loop episodes skip the fade so the last frame flows into the first
+            if t < 0.2: arr *= ease(t / 0.2)
+            if t > self.dur - 0.4: arr *= 1 - 0.85 * ease((t - (self.dur - 0.4)) / 0.4)
         return np.clip(arr, 0, 255).astype(np.uint8)
 
     def boundaries(self):

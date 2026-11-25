@@ -263,15 +263,16 @@ def style_ambient(dur):
 
 STYLES = {'lofi': style_lofi, 'jazz': style_jazz, 'folk': style_folk, 'bossa': style_bossa, 'synth': style_synth, 'ambient': style_ambient}
 
-def render(style, dur):
+def render(style, dur, fades=True):
     L, R, wet = STYLES[style](dur)
     L = reverb(L, 1.8, wet, 4); R = reverb(R, 1.8, wet, 5)
     st = np.stack([L, R], 1)
     n = len(st)
-    fade = np.ones(n)
-    fi = int(0.5 * SR); fade[:fi] = np.linspace(0, 1, fi)
-    fo = int(1.5 * SR); fade[-fo:] = np.linspace(1, 0, fo)
-    st *= fade[:, None]
+    if fades:
+        fade = np.ones(n)
+        fi = int(0.5 * SR); fade[:fi] = np.linspace(0, 1, fi)
+        fo = int(1.5 * SR); fade[-fo:] = np.linspace(1, 0, fo)
+        st *= fade[:, None]
     rms = np.sqrt((st ** 2).mean()) + 1e-9
     st *= 0.12 / rms
     peak = np.abs(st).max()
