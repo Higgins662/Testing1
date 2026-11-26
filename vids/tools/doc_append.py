@@ -86,5 +86,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 3:
         print(__doc__); sys.exit(1)
     doc = json.load(open(sys.argv[1], encoding='utf-8'))
+    if isinstance(doc, list):                 # saved tool result: [{"type": "text", "text": "<json>"}]
+        doc = json.loads(''.join(x.get('text', '') for x in doc if isinstance(x, dict)))
     md = open(sys.argv[2], encoding='utf-8').read()
     json.dump(build(doc, md), sys.stdout, ensure_ascii=False)
