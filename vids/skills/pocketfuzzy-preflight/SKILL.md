@@ -17,7 +17,7 @@ What it checks:
 - **Hook score (0–100).** Five properties, 20 points each: FRONTLOAD (subject first), FITS SHOT 1 (speakable in ~5s at 150 wpm), SPECIFIC (number or name), SURPRISE (breaks a belief or claims an extreme), OPEN LOOP (a second beat the payoff resolves). Filler openers ("Did you know", "Let's talk", "Hey", "Stop scrolling") are dealbreakers and cap the score at 40. Hooks that only make sense if you saw the news get a LEANS ON TREND flag.
 - **Caption lint.** The visible line before "more" must be ≤125 chars. At most 5 hashtags, including #didyouknow. A topic word from the hashtags must appear in the caption text, because Instagram search reads the text. At most one call to action. Total length ≤2,200.
 - **VO timing.** Script words at 150 wpm must land anywhere in the flexible 20–30s range. Per Vol 1's Retention playbook, aim for 20–24s: suggest a trim above 24s, but don't count it as a failure.
-- **Retention playbook (your judgment, not the script).** Check each episode against the playbook in Vol 1's Global settings: something is already moving in frame one, a bold 3–5 word hook overlay lands in the first 3 seconds, each beat has one short overlay, and the last line can run straight back into the hook (loop-ready).
+- **Retention playbook (your judgment, not the script).** Check each episode against the playbook in Vol 1's Global settings: something is already moving in frame one, a bold 3–5 word hook overlay lands in the first 3 seconds, each beat has one short overlay, and the Format line fits the script: loop only when the hook works as the payoff and the last line leads back into it; otherwise standard, ending on the payoff.
 
 The scores are heuristics. They reliably catch weak hooks, but they can't pick a winner between two decent ones, and a surprising fact can deserve its score without a "twist word." Use judgment, and say so when you overrule the script.
 
@@ -30,7 +30,7 @@ For each flagged item, give a ready-to-paste replacement:
 - **SEARCH WORD fail:** rewrite the first line so the topic noun appears naturally, keeping the joke ("Sea otters: everyone needs a pocket rock 🦦").
 - **VO outside 20–30s:** if it's too long, cut the slowest line rather than speeding up the voice. If it's too short, add one concrete detail.
 - **HOOK CARD missing or not 2–6 words** (the repo's `vids/tools/preflight.py` flags it): write a 2–6 word card that stops the scroll with the sound off ("NOT A CAR.", "BATHROOM TILES?!") and add it to the pack as a **Hook overlay:** line. The renderer shows it from frame 0 to 3s.
-- **Not loop-ready:** write a new last line that leads into the hook, and say which shot the video should end on so the last frame matches the first. Ep 16's loop cut is the model: it ends "…something's beeping outside at 3 AM, remember:" and restarts on "That car alarm at 3 AM might not be a car." Keep the new line true to the episode's source and accuracy guardrails.
+- **Format doesn't fit** (a loop whose ending is really a punchline, reveal, PSA card or question, or a standard episode whose ending falls flat): switch the Format line. Loops stay at about 1 in 3. For a loop, write a new last line that leads into the hook, and say which shot the video should end on so the last frame matches the first. Ep 16's loop cut is the model: it ends "…something's beeping outside at 3 AM, remember:" and restarts on "That car alarm at 3 AM might not be a car." Keep the new line true to the episode's source and accuracy guardrails.
 
 ## Production checklist (ask or confirm for each episode about to be made)
 
@@ -42,7 +42,7 @@ For each flagged item, give a ready-to-paste replacement:
 - Time-sensitive facts (prices, "this week", ages, records) have been re-checked on posting day, with web search if available.
 - Sensitive-news episodes end on their kindness/PSA card.
 
-Output one table per run: `Ep | Hook score | Rating | Overlay | Loop-ready | Caption | VO time | Fix`. Put the paste-ready fixes below it.
+Output one table per run: `Ep | Hook score | Rating | Overlay | Format | Caption | VO time | Fix`. Put the paste-ready fixes below it.
 
 ## preflight.py
 

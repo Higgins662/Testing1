@@ -170,18 +170,20 @@ def parse_pack(path):
         title = body.split("\n", 1)[0].replace("★", "").strip()
         hook = re.search(r"\*\*Hook:\*\*\s*(.+)", body) or re.search(r"\*\*Hook[^*]*:\*\*\s*(.+)", body)
         card = re.search(r"\*\*Hook overlay:\*\*\s*(.+)", body)
+        fmt = re.search(r"\*\*Format:\*\*\s*(\w+)", body)
         cap = re.search(r"\*\*Caption:\*\*\s*(.+)", body)
         length = re.search(r"\*\*Length:\*\*\s*~?(\d+)s", body)
         vo = re.search(r"### Voiceover script\n((?:>.*\n?)+)", body)
         vo_lines = [l.lstrip("> ").strip() for l in vo.group(1).splitlines()] if vo else []
         yield {"ep": num, "title": title, "hook": hook.group(1) if hook else None,
                "card": card.group(1).strip() if card else None,
+               "format": fmt.group(1).lower() if fmt else None,
                "caption": cap.group(1) if cap else None,
                "target": int(length.group(1)) if length else None, "vo": vo_lines}
 
 
 def report_pack(paths):
-    rows, fixes, timing = [], [], []
+    rows, fixes, timing, loops = [], [], [], []
     for p in paths:
         for e in parse_pack(p):
             hs = score_hook(e["hook"]) if e["hook"] else None
@@ -201,6 +203,16 @@ def report_pack(paths):
                 items.append("HOOK CARD missing: add a **Hook overlay:** line (2-6 words) shown from frame 0 to 3s")
             elif not 2 <= card_words <= 6:
                 items.append(f"HOOK CARD is {card_words} words; keep it 2-6 so it reads in under a second")
+            fm = e.get("format")
+            last = e["vo"][-1].strip() if e["vo"] else ""
+            if fm not in ("loop", "standard"):
+                items.append("FORMAT missing: add **Format:** loop or standard (loop only when the hook works as the payoff)")
+            elif fm == "standard" and last.endswith(":"):
+                items.append("FORMAT standard but the last line is a lead-in; end on the payoff")
+            elif fm == "loop" and not last.endswith((":", "…", "...")):
+                items.append("FORMAT loop but the last line doesn't lead back into the hook")
+            if fm == "loop":
+                loops.append((e["ep"], last.lower()))
             if not ok:
                 items.append(f"VO is {w} words ≈ {s:.0f}s, outside the {MIN_SECONDS}–{MAX_SECONDS}s range")
             if items:
@@ -217,6 +229,12 @@ def report_pack(paths):
         print(f"\nMedian hook score {statistics.median(scores)} · "
               f"STRONG {sum(r[3]=='STRONG' for r in rows)} · OK {sum(r[3]=='OK' for r in rows)} · "
               f"WEAK {sum(r[3]=='WEAK' for r in rows)}")
+    fmts = [r for r in rows]
+    if loops:
+        print(f"Loops: {len(loops)} of {len(rows)} episodes (aim for about 1 in 3)")
+        for (a, la), (b, lb) in zip(loops, loops[1:]):
+            if la.split(",")[0][:25] == lb.split(",")[0][:25]:
+                print(f"Loop lead-ins of Ep {a} and Ep {b} start the same way; vary the wording")
     print("\n## Fix list")
     for ep, title, items in fixes:
         print(f"- **{ep} {title}**: " + " | ".join(items))

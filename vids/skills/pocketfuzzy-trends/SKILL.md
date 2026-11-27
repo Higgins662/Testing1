@@ -62,7 +62,7 @@ The output is queue rows instead of a shortlist. The queue is the Google Sheet "
 - Append each kept topic as a row:
   - Ep blank, Title, Hook (hook draft), Status `idea`, Added today.
   - Kind `trend` with Post by = the day it broke + 2 days, or `holiday` with Post by = the event date.
-  - Notes: trend · source · guardrail wording · loop line.
+  - Notes: trend · source · guardrail wording · loop line, only if the topic fits a loop.
 - Don't write a new pack doc. Episodes get scripted into the Vol 3 doc by the daily run.
 
 ## outliers.py

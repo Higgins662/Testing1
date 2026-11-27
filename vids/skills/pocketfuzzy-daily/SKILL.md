@@ -1,6 +1,6 @@
 ---
-name: pocketfuzzy-daily
-description: Run the Pocketfuzzy daily production pass: trend sweep with the 48-hour rule, queue update, scripts into the pack doc, preflight, render the next loop cuts, and a daily brief. Never posts.
+name: "pocketfuzzy-daily"
+description: "Run the Pocketfuzzy daily production pass: trend sweep with the 48-hour rule, queue update, scripts into the pack doc, preflight, render the next videos, and a daily brief. Never posts."
 ---
 
 # Pocketfuzzy daily run
@@ -80,7 +80,8 @@ For each pick with status `idea`, write the full episode in the pack format and 
 - **Voice:** from the Vol 1 pool, different from the last rendered episode's voice. That voice is in the newest Runs row with a render.
 - **Music:** the next style in the rotation after the last rendered episode's style: folk → jazz → lo-fi → bossa nova → synthwave → ambient.
 - **Hook overlay:** a 2–6 word hook card shown from frame 0 to 3s. It has to stop the scroll on its own, with the sound off.
-- **Loop-ready VO:** about 20–24s, and the last line leads into the hook.
+- **Format:** a `**Format:** standard` or `**Format:** loop` line. Standard is the default. Loop only when the hook is a standalone surprising claim that the episode explains and the last line can lead back into it naturally. Keep loops to about 1 in 3 (look at the last few rendered rows) and never reuse the previous loop's lead-in wording.
+- **VO:** about 20–24s. Standard: the last line is the payoff. Loop: the last line leads into the hook.
 - **4–5 shots:** one line each, `n · time · visual · ON-SCREEN · sfx`. The style block is implied by Vol 1.
 - **The rest:** Never draw, Caption, Pinned comment (a question that invites replies), Source, and Accuracy guardrails.
 
@@ -98,7 +99,7 @@ Run pocketfuzzy-preflight on each pick's pack: export the doc as markdown, then 
 
 ### 7. Render
 
-Run pocketfuzzy-render for each `checked` pick, as a loop cut. That skill:
+Run pocketfuzzy-render for each `checked` pick, in the format its pack lists. That skill:
 - commits the episode script,
 - sends the MP4 into this run's conversation,
 - sets the row to `rendered`.

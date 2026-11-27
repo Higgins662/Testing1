@@ -1,15 +1,21 @@
-"""Pocketfuzzy episode template: a LOOP CUT (the default house format).
+"""Pocketfuzzy episode template. Set FORMAT from the pack's Format line: 'standard' (the default) or 'loop'.
+
+Loops only where they fit (Vol 1 Retention playbook): the hook is a standalone surprising claim the episode explains,
+and the last line leads back into it naturally. Punchline, reveal, resolution, PSA-card and question endings are
+'standard': payoff line, then the pocketfuzzy end tag. Keep loops to about 1 in 3 videos.
 
 Copy to epNN.py, write epNN_lines.json, voice it, then replace the placeholder art and scenes.
     cp ep_template.py ep38.py          # and set NAME below
     python3 tts_lines.py ep38 af_heart en-us
     python3 ep38.py preview 0.0,4.0,9.0,15.0,LAST     # LAST = DUR - 0.04; check first vs last frame match
-    ./render.sh ep38 pocketfuzzy_ep38_slug_loop
+    ./render.sh ep38 pocketfuzzy_ep38_slug            # add _loop to the name only for loop cuts
 
 Rules the template already follows (keep them):
-- loop=True: no picture fade, no end tag, music and SFX wrap, so the last frame flows into frame 0.
-- The LAST scene settles onto exactly the pose and background of the FIRST frame (see pose()).
-- The last VO line is a lead-in that finishes grammatically with the first line ("…so next time, remember:").
+- FORMAT 'loop': no picture fade, no end tag, music and SFX wrap, the LAST scene settles onto exactly the pose and
+  background of the FIRST frame (see pose()), and the last VO line leads back into the first line. Don't reuse the
+  previous loop's lead-in wording.
+- FORMAT 'standard': fades, the last VO line is the payoff, the pocketfuzzy end tag shows after it, and the last
+  scene is a payoff shot (s_last can end anywhere).
 - HOOK CARD (required): set HOOK below to the pack's "Hook overlay" (2-6 words). pf draws it big in the upper third
   from frame 0 to 3.0s (and back on for the last 0.45s of a loop cut). Don't draw your own overlays before 3.0s.
   Frame 0 should also show the subject mid-action, not an empty scene.
@@ -24,9 +30,11 @@ from pf import *
 
 NAME = 'ep_template'                      # must match the file name and the *_lines.json / *_durs.json prefix
 STYLE = 'bossa'                           # next in rotation: folk jazz lofi bossa synth ambient
-lines, durs, starts, DUR = timeline(NAME, first=0.15, gap=0.24, tail=0.42)   # tight gaps: aim 20-24s total
+FORMAT = 'standard'                       # 'standard' or 'loop', from the pack's Format line
+LOOP = FORMAT == 'loop'
+lines, durs, starts, DUR = timeline(NAME, first=0.15, gap=0.24, tail=0.42 if LOOP else 2.3)   # aim 20-24s total
 CHUNKS = chunks_from(lines, durs, starts, DUR, emph={0: []})                  # emph: words to highlight per line (UPPERCASE, with punctuation)
-NO_END_TAG = DUR + 99                     # loop cuts have no end card
+END_TAG = DUR + 99 if LOOP else starts[-1] + durs[-1] + 0.35   # loop cuts have no end tag
 HOOK = 'HOOK WORDS HERE'                  # the pack's Hook overlay, 2-6 words: on screen from frame 0 to 3s
 
 # ------------------------------------------------------------ backgrounds (built once, copied per frame)
@@ -91,7 +99,7 @@ def s4(tl, frame, sd):                    # TWIST / payoff, the Fuzz reacts
     overlay(img, 'PAYOFF', ease_back(seg(tl, 0.3, 0.6)))
     return img
 
-def s_last(tl, frame, sd):                # LOOP-BACK: ends on exactly frame 0
+def s_last(tl, frame, sd):                # loop: ends on exactly frame 0; standard: the payoff shot
     img = SCENE_A.copy()
     p = tl - sd                            # reaches 0 at the final frame
     x, y, r = pose(p)
@@ -101,7 +109,7 @@ def s_last(tl, frame, sd):                # LOOP-BACK: ends on exactly frame 0
 
 FNS = [s1, s2, s3, s4, s_last][-NS:] if NS < 5 else [s1, s2, s3, s4, s_last]
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate(FNS)]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook=HOOK)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, END_TAG, loop=LOOP, hook=HOOK)
 
 def audio_plan():
     """SFX events: (sound, start_seconds, gain, pan -1..1). Events past DUR wrap to the start."""
@@ -116,7 +124,7 @@ if __name__ == '__main__':
     if sys.argv[1] == 'audio':
         import pf_audio as A
         cues, sfx = audio_plan()
-        A.build(DUR, cues, sfx, f'/home/claude/eps/{NAME}/audio.wav', style=STYLE, loop=True)
+        A.build(DUR, cues, sfx, f'/home/claude/eps/{NAME}/audio.wav', style=STYLE, loop=LOOP)
         print('audio ok')
     elif sys.argv[1] == 'preview' and 'LAST' in sys.argv[2]:
         EP.main([sys.argv[0], 'preview', sys.argv[2].replace('LAST', f'{DUR - 1 / FPS:.3f}')])
