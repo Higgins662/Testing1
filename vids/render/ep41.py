@@ -175,7 +175,6 @@ B = [0] + [starts[i] - 0.12 for i in (1, 2, 3, 4)] + [DUR]
 def s1(tl, frame, sd):
     img = SUNSET.copy()
     hook_base(img, frame, tl)
-    overlay(img, "CAN'T OUTFLY IT", ease_back(seg(tl, 0.2, 0.5), 2.0), size=96)
     return img
 
 def s2(tl, frame, sd):
@@ -254,7 +253,7 @@ def hop_y(u):
     return 4 * 60 * u * (1 - u)
 
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate([s1, s2, s3, s4, s5])]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook="THEY CAN'T OUTFLY A FALCON")
 
 def audio_plan():
     import pf_audio as A

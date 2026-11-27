@@ -201,7 +201,6 @@ def s1(tl, frame, sd):
     img = ROOM.copy()
     couch_scene(img, frame, tl)
     draw_cat(img, frame, CAT_X, CAT_Y, CAT_S, hook_open(tl), tl)
-    overlay(img, "IT'S A CAT SMILE", ease_back(seg(tl, 0.2, 0.5), 2.0), size=96)
     return img
 
 def s2(tl, frame, sd):
@@ -281,7 +280,7 @@ def s5(tl, frame, sd):
     return img
 
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate([s1, s2, s3, s4, s5])]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook="IT'S A CAT SMILE")
 
 def audio_plan():
     import pf_audio as A
