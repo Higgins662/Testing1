@@ -185,9 +185,6 @@ def arctic_bear(tl, frame, wave_amt, z):
 
 def s1(tl, frame, sd):
     img, z = arctic_bear(tl, frame, seg(tl, 0.2, 0.5), lerp(1.0, 1.06, ease(tl / sd)))
-    t2 = starts[0] + 1.25
-    overlay(img, 'NOT WHITE', ease_back(seg(tl, 0.2, 0.5), 2.0) * (1 - seg(tl, t2 - 0.1, t2)))
-    overlay(img, 'BLACK SKIN?!', ease_back(seg(tl, t2, t2 + 0.3), 2.0))
     return camera(img, z, 560, 880)
 
 def s2(tl, frame, sd):
@@ -316,7 +313,7 @@ def s6(tl, frame, sd):
     return camera(img, lerp(1.06, 1.0, ease(seg(tl, 0, sd))), 560, 880)
 
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate([s1, s2, s3, s4, s5, s6])]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook="POLAR BEARS AREN'T WHITE")
 
 def audio_plan():
     import pf_audio as A

@@ -29,7 +29,7 @@ For each flagged item, give a ready-to-paste replacement:
 - **Hook rated WEAK or OK, or flagged LEANS ON TREND:** three rewrites using different formulas (myth flip, hidden origin, number shock, strange trait, used to, extreme). Re-score them and recommend one. Keep any rewrite true to the episode's source and accuracy guardrails.
 - **SEARCH WORD fail:** rewrite the first line so the topic noun appears naturally, keeping the joke ("Sea otters: everyone needs a pocket rock 🦦").
 - **VO outside 20–30s:** if it's too long, cut the slowest line rather than speeding up the voice. If it's too short, add one concrete detail.
-- **No hook overlay:** propose a 3–5 word overlay for the first 3 seconds that sharpens the hook ("NOT A CAR.", "BATHROOM TILES?!").
+- **HOOK CARD missing or not 2–6 words** (the repo's `vids/tools/preflight.py` flags it): write a 2–6 word card that stops the scroll with the sound off ("NOT A CAR.", "BATHROOM TILES?!") and add it to the pack as a **Hook overlay:** line. The renderer shows it from frame 0 to 3s.
 - **Not loop-ready:** write a new last line that leads into the hook, and say which shot the video should end on so the last frame matches the first. Ep 16's loop cut is the model: it ends "…something's beeping outside at 3 AM, remember:" and restarts on "That car alarm at 3 AM might not be a car." Keep the new line true to the episode's source and accuracy guardrails.
 
 ## Production checklist (ask or confirm for each episode about to be made)

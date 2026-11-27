@@ -171,7 +171,6 @@ def s1(tl, frame, sd):
     su = seg(tl, T_FLIP + 0.45, T_FLIP + 0.7)
     if su > 0:
         paste(img, STAMP, x + 20, y + 40, lerp(1.8, 1.0, ease_out(su)), alpha=min(1, su * 3))
-    overlay(img, "IT'S A PRESS RELEASE", ease_back(seg(tl, T_FLIP, T_FLIP + 0.3), 2.0), size=86)
     return img
 
 def s2(tl, frame, sd):
@@ -266,7 +265,7 @@ def s6(tl, frame, sd):
 
 FNS = [s1, s2, s3, s4, s5, s6]
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate(FNS)]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook='CYBER MONDAY WAS A PRESS RELEASE')
 
 def audio_plan():
     import pf_audio as A

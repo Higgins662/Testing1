@@ -10,7 +10,10 @@ Rules the template already follows (keep them):
 - loop=True: no picture fade, no end tag, music and SFX wrap, so the last frame flows into frame 0.
 - The LAST scene settles onto exactly the pose and background of the FIRST frame (see pose()).
 - The last VO line is a lead-in that finishes grammatically with the first line ("…so next time, remember:").
-- One big overlay per beat, max 3 words, upper third (y 220-300), never covering the captions at the bottom.
+- HOOK CARD (required): set HOOK below to the pack's "Hook overlay" (2-6 words). pf draws it big in the upper third
+  from frame 0 to 3.0s (and back on for the last 0.45s of a loop cut). Don't draw your own overlays before 3.0s.
+  Frame 0 should also show the subject mid-action, not an empty scene.
+- After 3s: one big overlay per beat, max 3 words, upper third (y 220-300), never covering the captions at the bottom.
 - The Fuzz is armless, appears at least once (usually the last beat), same design every episode.
 - Draw only original shapes. No logos, brands, real people, franchise characters, or the viral image itself.
 Real episodes to learn from: ep16L.py (Car Alarm Bird) and ep20L.py (Bathroom-Tile Rocket) and their bases ep16.py / ep20.py.
@@ -24,6 +27,7 @@ STYLE = 'bossa'                           # next in rotation: folk jazz lofi bos
 lines, durs, starts, DUR = timeline(NAME, first=0.15, gap=0.24, tail=0.42)   # tight gaps: aim 20-24s total
 CHUNKS = chunks_from(lines, durs, starts, DUR, emph={0: []})                  # emph: words to highlight per line (UPPERCASE, with punctuation)
 NO_END_TAG = DUR + 99                     # loop cuts have no end card
+HOOK = 'HOOK WORDS HERE'                  # the pack's Hook overlay, 2-6 words: on screen from frame 0 to 3s
 
 # ------------------------------------------------------------ backgrounds (built once, copied per frame)
 SKY = downsample(bg_canvas([(0, (150, 200, 235)), (0.6, (210, 232, 240)), (1, (240, 226, 196))],
@@ -64,8 +68,7 @@ def s1(tl, frame, sd):                    # HOOK: the most surprising picture, r
     img = SCENE_A.copy()
     x, y, r = pose(tl)
     paste(img, SUBJ[boil(frame)], x, y, 1.3, rot=r)
-    overlay(img, 'HOOK WORDS', ease_back(seg(tl, 0.2, 0.5)))
-    return img
+    return img                            # the hook card covers 0-3s; no extra overlay here
 
 def s2(tl, frame, sd):                    # CONTEXT: who/where/when
     img = SCENE_A.copy()
@@ -98,7 +101,7 @@ def s_last(tl, frame, sd):                # LOOP-BACK: ends on exactly frame 0
 
 FNS = [s1, s2, s3, s4, s_last][-NS:] if NS < 5 else [s1, s2, s3, s4, s_last]
 SCENES = [(B[i], B[i + 1], fn) for i, fn in enumerate(FNS)]
-EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True)
+EP = Episode(NAME, SCENES, CHUNKS, DUR, NO_END_TAG, loop=True, hook=HOOK)
 
 def audio_plan():
     """SFX events: (sound, start_seconds, gain, pan -1..1). Events past DUR wrap to the start."""

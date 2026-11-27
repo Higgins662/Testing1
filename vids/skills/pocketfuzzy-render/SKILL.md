@@ -34,12 +34,13 @@ Loop cuts are the house default (Vol 1 Retention playbook): no end tag, no fades
 2. **Voice.** `python3 tts_lines.py epNN <voice> <lang>` using the pack's voice: Michael `am_michael en-us`, Puck `am_puck en-us`, George `bm_george en-gb`, Lewis `bm_lewis en-gb`, Heart `af_heart en-us`, Emma `bf_emma en-gb`. It prints each line's length and the total; with gaps the video runs about total + 2s. Over 26s: trim lines and re-voice.
 3. **Animate.** `cp ep_template.py epNN.py`, set `NAME = 'epNN'` and `STYLE` (the music style the queue assigned: folk, jazz, lofi, bossa, synth, ambient). Then replace the placeholder art and scenes:
    - Draw every character and object with `Pen` (poly, ell, line, dot, capsule, rrect) inside `make_sprite`, 3 seeds each for the hand-drawn boil. Backgrounds with `downsample(bg_canvas(...), W, H)`.
-   - One scene per beat of the pack's shot list, using its visual prompts and on-screen text. One big overlay per beat (≤3 words, upper third), the hook overlay in the first 3 seconds.
+   - **Hook card (required):** set `HOOK` to the pack's **Hook overlay** (2–6 words; write one into the pack first if it's missing). pf draws it big in the upper third from frame 0 to 3.0s, and again over the loop seam. Don't draw other overlays before 3s, and make frame 0 show the subject mid-action, never an empty scene.
+   - One scene per beat of the pack's shot list, using its visual prompts and on-screen text. After 3s, one big overlay per beat (≤3 words, upper third).
    - The Fuzz (`fuzz_sprites()`), armless and unchanged, appears at least once.
    - The last scene settles on exactly the first frame's background and pose (`pose(p)` with p = 0 at both ends).
    - Never draw anything on the episode's **Never draw** line, logos, real people, franchise characters, or the viral image.
    Study `ep16L.py`/`ep16.py` and `ep20L.py`/`ep20.py` for the level of detail that works: scenes have motion (ease, seg, lerp, boil, camera, shake, sparkle, glow), not static cards.
-4. **Look before rendering.** `python3 epNN.py preview 0.0,<one time per scene>,LAST`, then view the JPGs in `epNN/` with Read. Check: art is recognizable, overlays don't collide with captions, nothing off-canvas, and `p_0.0` vs the LAST frame match apart from captions. Fix and re-preview until it looks right. This is the step that decides quality; take two or three passes.
+4. **Look before rendering.** `python3 epNN.py preview 0.0,<one time per scene>,LAST`, then view the JPGs in `epNN/` with Read. Check: `p_0.0` shows the hook card over the subject (the scroll-stopper), art is recognizable, overlays don't collide with captions, nothing off-canvas, and `p_0.0` vs the LAST frame match apart from captions. Fix and re-preview until it looks right. This is the step that decides quality; take two or three passes.
 5. **Sound.** Edit `audio_plan()` so the SFX follow the shot list (pf_audio has rustle, whoosh, pop, chime, sparkles, tick, thud, wind, honk, whistle, crowd, scribble, stamp, brass, engine, slurp, splash, boing, flutter). Sounds that run past the end wrap to the start.
 
 ## 4. Render and check

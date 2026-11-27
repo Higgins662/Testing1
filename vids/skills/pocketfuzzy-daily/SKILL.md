@@ -79,6 +79,7 @@ For each pick with status `idea`, write the full episode in the pack format and 
 - **Number:** the next free number (the highest Ep anywhere in the queue + 1; Ep 13 is retired).
 - **Voice:** from the Vol 1 pool, different from the last rendered episode's voice. That voice is in the newest Runs row with a render.
 - **Music:** the next style in the rotation after the last rendered episode's style: folk → jazz → lo-fi → bossa nova → synthwave → ambient.
+- **Hook overlay:** a 2–6 word hook card shown from frame 0 to 3s. It has to stop the scroll on its own, with the sound off.
 - **Loop-ready VO:** about 20–24s, and the last line leads into the hook.
 - **4–5 shots:** one line each, `n · time · visual · ON-SCREEN · sfx`. The style block is implied by Vol 1.
 - **The rest:** Never draw, Caption, Pinned comment (a question that invites replies), Source, and Accuracy guardrails.

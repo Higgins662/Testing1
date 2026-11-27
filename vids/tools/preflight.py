@@ -168,12 +168,14 @@ def parse_pack(path):
     for i in range(1, len(eps), 2):
         num, body = eps[i], eps[i + 1]
         title = body.split("\n", 1)[0].replace("★", "").strip()
-        hook = re.search(r"\*\*Hook[^*]*:\*\*\s*(.+)", body)
+        hook = re.search(r"\*\*Hook:\*\*\s*(.+)", body) or re.search(r"\*\*Hook[^*]*:\*\*\s*(.+)", body)
+        card = re.search(r"\*\*Hook overlay:\*\*\s*(.+)", body)
         cap = re.search(r"\*\*Caption:\*\*\s*(.+)", body)
         length = re.search(r"\*\*Length:\*\*\s*~?(\d+)s", body)
         vo = re.search(r"### Voiceover script\n((?:>.*\n?)+)", body)
         vo_lines = [l.lstrip("> ").strip() for l in vo.group(1).splitlines()] if vo else []
         yield {"ep": num, "title": title, "hook": hook.group(1) if hook else None,
+               "card": card.group(1).strip() if card else None,
                "caption": cap.group(1) if cap else None,
                "target": int(length.group(1)) if length else None, "vo": vo_lines}
 
@@ -194,6 +196,11 @@ def report_pack(paths):
             if hs and (hs["rating"] != "STRONG" or hs["flags"]):
                 items.append(f"hook {hs['score']} {hs['rating']}: " + "; ".join(hs["flags"] + hs["notes"]))
             items += ["caption " + f for f in fails]
+            card_words = len(e["card"].split()) if e.get("card") else 0
+            if not e.get("card"):
+                items.append("HOOK CARD missing: add a **Hook overlay:** line (2-6 words) shown from frame 0 to 3s")
+            elif not 2 <= card_words <= 6:
+                items.append(f"HOOK CARD is {card_words} words; keep it 2-6 so it reads in under a second")
             if not ok:
                 items.append(f"VO is {w} words ≈ {s:.0f}s, outside the {MIN_SECONDS}–{MAX_SECONDS}s range")
             if items:

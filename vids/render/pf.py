@@ -346,10 +346,50 @@ VIG = np.clip(1.0 - 0.28 * np.clip(_d - 0.35, 0, 1) ** 1.4, 0.6, 1)[..., None].a
 WARM = np.array([1.02, 1.0, 0.96], np.float32)
 
 # ------------------------------------------------------------ episode runner
+HOOK_HOLD = 3.0          # the hook card is on screen from frame 0 until this time (house rule: hook in the first 3 seconds)
+
+def _wrap(text, fnt, maxw):
+    words, lines, cur = text.split(), [], ''
+    d = ImageDraw.Draw(Image.new('RGB', (8, 8)))
+    for w in words:
+        trial = (cur + ' ' + w).strip()
+        if d.textlength(trial, font=fnt) <= maxw or not cur:
+            cur = trial
+        else:
+            lines.append(cur); cur = w
+    return lines + ([cur] if cur else [])
+
+def draw_hook(img, text, t, dur, loop, y=300):
+    """Scroll-stopping hook card: fully visible on frame 0, held to HOOK_HOLD, and (loop cuts) back on
+    for the last 0.45s so the loop seam shows the same card as frame 0."""
+    if not text:
+        return
+    if t < HOOK_HOLD:
+        u = 1.0 - ease(seg(t, HOOK_HOLD - 0.25, HOOK_HOLD))          # quick exit
+    elif loop and t > dur - 0.45:
+        u = ease_back(seg(t, dur - 0.45, dur - 1 / FPS), 1.6)         # returns before the seam
+    else:
+        return
+    if u <= 0.02:
+        return
+    pulse = 1.0 + 0.035 * math.sin(t * 7.0) if t < HOOK_HOLD else 1.0
+    size = int(118 * u * pulse)
+    fnt = font(FONT_CAP, max(8, size))
+    lines = _wrap(text.upper(), fnt, 960)
+    d = ImageDraw.Draw(img)
+    lh = int(size * 1.08)
+    y0 = y - lh * (len(lines) - 1) / 2
+    for i, ln in enumerate(lines):
+        d.text((548, y0 + i * lh + 8), ln, font=fnt, fill=(0, 0, 0), anchor='mm')                 # drop shadow
+        d.text((540, y0 + i * lh), ln, font=fnt, fill=HL, anchor='mm', stroke_width=max(2, int(13 * u)), stroke_fill=OUT)
+
 class Episode:
-    def __init__(self, name, scenes, chunks, dur, end_tag_at, xf=0.34, loop=False):
+    def __init__(self, name, scenes, chunks, dur, end_tag_at, xf=0.34, loop=False, hook=None):
         self.name, self.scenes, self.chunks, self.dur = name, scenes, chunks, dur
-        self.end_tag_at, self.xf, self.loop = end_tag_at, xf, loop
+        self.end_tag_at, self.xf, self.loop, self.hook = end_tag_at, xf, loop, hook
+        if not hook:
+            print(f'WARNING {name}: no hook card (Episode(..., hook="2-5 WORDS")); house rule is a hook on screen in the first 3s',
+                  file=sys.stderr)
 
     def scene_frame(self, t, frame):
         S = self.scenes
@@ -365,6 +405,7 @@ class Episode:
     def render(self, frame):
         t = frame / FPS
         img = self.scene_frame(t, frame).convert('RGBA')
+        draw_hook(img, self.hook, t, self.dur, self.loop)
         draw_caption(img, t, self.chunks, self.end_tag_at)
         img.alpha_composite(WATERMARK)
         arr = np.asarray(img.convert('RGB')).astype(np.float32)
