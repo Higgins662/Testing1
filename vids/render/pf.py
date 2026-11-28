@@ -411,7 +411,7 @@ class Episode:
         arr = np.asarray(img.convert('RGB')).astype(np.float32)
         arr = arr * VIG * WARM + GRAIN[(frame // 2) % len(GRAIN)]
         if not self.loop:   # loop episodes skip the fade so the last frame flows into the first
-            if t < 0.2: arr *= ease(t / 0.2)
+            if t < 0.2 and not self.hook: arr *= ease(t / 0.2)   # with a hook card, frame 0 must show it (house rule)
             if t > self.dur - 0.4: arr *= 1 - 0.85 * ease((t - (self.dur - 0.4)) / 0.4)
         return np.clip(arr, 0, 255).astype(np.uint8)
 
